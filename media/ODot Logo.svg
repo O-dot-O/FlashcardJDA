@@ -1,0 +1,20 @@
+<svg width="1100" height="1100" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <title>ODot Logo</title>
+ <defs>
+  <linearGradient y2="0.8" spreadMethod="pad" id="svg_9">
+   <stop offset="0" stop-opacity="0.99609" stop-color="#0090ff"/>
+   <stop offset="1" stop-opacity="0.99219" stop-color="#00d7ea"/>
+  </linearGradient>
+  <linearGradient y2="1" id="svg_13">
+   <stop offset="0" stop-opacity="0.99219" stop-color="#88dd00"/>
+   <stop offset="0.1862" stop-opacity="0.99609" stop-color="#0fff0f"/>
+   <stop offset="0.97526" stop-opacity="0.99609" stop-color="#00db99"/>
+  </linearGradient>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <path id="svg_4" d="m49.49832,540.00726c0,-270.99921 219.50934,-490.50856 490.50851,-490.50856c270.99921,0 490.50854,219.50935 490.50854,490.50856c0,270.99921 -219.50934,490.50848 -490.50854,490.50848c-270.99918,0 -490.50851,-219.50928 -490.50851,-490.50848z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="99" stroke="url(#svg_9)" fill-opacity="0" fill="#000000"/>
+  <circle transform="translate(-0) translate(-0) translate(-8.89062, -14.668) translate(5.33333) translate(-58.6667, -5.33333) translate(-172.444, 115.556)" stroke-opacity="0" id="svg_7" r="199.52953" cy="732.00837" cx="1066.78678" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="99" stroke="#000000" fill="url(#svg_13)"/>
+ </g>
+</svg>
