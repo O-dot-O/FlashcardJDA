@@ -12,9 +12,9 @@ body {
     background-color: #111;
     overflow-x: hidden;
     padding-top: 20px;
-  }
+}
 
-  .dropdown-btn {
+.dropdown-btn {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 1vw;
@@ -22,8 +22,28 @@ body {
     display: block;
     border: none;
     background: none;
-    width:100%;
+    width: 100%;
     text-align: left;
     cursor: pointer;
     outline: none;
-  }
+}
+
+.dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+main {
+    margin-left: 20%;
+    padding: 0px 10px;
+}
+
+.active {
+    background-color: gray;
+    color: white;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
