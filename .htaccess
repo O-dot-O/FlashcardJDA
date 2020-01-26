@@ -1,3 +1,4 @@
+<!--
 <IfModule mod_expires.c>
   ExpiresActive On
 
@@ -22,3 +23,4 @@
   ExpiresByType application/pdf "access plus 1 month"
   ExpiresByType application/x-shockwave-flash "access plus 1 month"
 </IfModule>
+-->
