@@ -35,6 +35,11 @@ body {
 
 main {
     margin-left: 20%;
+    font-size: 25px;
+}
+
+.maincontent {
+    
     font-size: 20px;
     padding: 0px 10px;
 }
@@ -61,6 +66,15 @@ main {
     padding-right: 8px;
 }
 
+.fa-arrow-left {
+    float: left;
+    padding: 1% 2% 1% 2%;
+}
+
+.fa-arrow-left:hover {
+    cursor: pointer;
+}
+
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
@@ -69,4 +83,20 @@ main {
     .sidenav a {
         font-size: 18px;
     }
+}
+
+header {
+    padding: 1% 1% 2% 1%;
+    width: 100%;
+    background: #00F260;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0575E6, #00F260);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: inline-flexbox;
+}
+
+.headercontent{
+    display: flex;
 }
