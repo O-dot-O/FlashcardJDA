@@ -5,7 +5,6 @@ This project has been created to help pupils of the [Jeanne d'Arc establishment]
 We use the following liraries:
   * jQuery 3.4.1
   * Bootstrap v4.4.1
-  * W3.CSS 4.13
   * Popper.js
   * Font awesome Latest (5.12.0 at the moment)
 
