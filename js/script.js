@@ -1,9 +1,22 @@
-$(document).ready(function () {
-  $(".dropdown-btn").click(function () {
-    $(this).next().toggle();
-    $(this).next().toggleClass("active");
-    $(this).children().toggleClass("fa-caret-down");
-    $(this).children().toggleClass("fa-caret-up");
+  var cardNumber = 0;
+  $(document).ready(function () {
 
+  	$(".nb-here").text(cardNumber);
+  	$(".dropdown-btn").next().hide();
+  	$(".dropdown-btn").click(function () {
+  		$(this).next().toggle(500);
+  		$(this).toggleClass("arrow-down");
+  		$(this).toggleClass("arrow-up");
+  	});
+  	$(".prev-btn").click(function () {
+		  cardNumber--
+		  if (cardNumber < 0) {
+			  cardNumber = 0;
+		  }
+		  $(".nb-here").text(cardNumber);
+  	});
+  	$(".next-btn").click(function () {
+		  cardNumber++
+		  $(".nb-here").text(cardNumber);
+  	});
   });
-});

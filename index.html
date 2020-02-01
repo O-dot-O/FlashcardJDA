@@ -18,7 +18,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/4ea6fff15a.js" crossorigin="anonymous"></script>
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/w3.css">
@@ -37,8 +37,8 @@
         </div>
     </nav>
     <asside class="asside container-fluid">
-        <h2>FlashCards-JDA</h2>
-        <div class="separator"></div>
+        <h2 class="uppasside">FlashCards-JDA</h2>
+        <div class="separator uppasside"></div>
         <h2 class="asside-header">Catégorie</h2>
         <form class="form-group" action="#" method="get">
             <input type="text" placeholder="Entrer n° Carte voulue" class="numero form-control">
@@ -46,8 +46,7 @@
         <ul class="matierre">
             <div class="needed">
                 <drop class="bug">
-                    <span class="bug txt">Brevet <span class="tUp">&blacktriangle;</span><span
-                            class="tDown">&blacktriangledown;</span></span>
+                    <span class="bug txt dropdown-btn arrow-down">Brevet </span>
                     <nav class="navbarr">
 
                         <ul class="matierre matierre1">
@@ -69,12 +68,11 @@
 
             <div class="needed">
                 <drop class="bug2">
-                    <span class="bug2 txt">Bac <span class="tUp2">&blacktriangle;</span><span
-                            class="tDown2">&blacktriangledown;</span></span></span>
+                    <span class="bug2 txt dropdown-btn arrow-down">Bac </span>
                     <nav class="navbarr">
 
                         <ul class="matierre matierre2">
-                            <li><a class="DropDown2 bac math" href="#">Mathématique</a></li>
+                            <li><a class="DropDown2 bac math" href="#">Mathématiques</a></li>
                             <li><a class="DropDown2 bac fran" href="#">Français</a></li>
                             <li><a class="DropDown2 bac angl" href="#">Anglais</a></li>
                             <li><a class="DropDown2 bac phys" href="#">Physique</a></li>
@@ -98,7 +96,7 @@
             <li><a href="#">Plus d'information</a></li>
         </ul>
 
-        <h2 class="asside-header">Fondateur</h2>
+        <h2 class="asside-header">Fondateurs</h2>
         <ul class="matierre">
             <li><a href="#">Nicolas Giannettini</a></li>
             <li><a href="https://github.com/Boudial">Maxence Raynal</a></li>
@@ -110,14 +108,15 @@
     <div class="main container-fluid">
         <div class="row row-counter">
             <div class="col-lg-4 col-md-4 col-xs-6">
-                <button type="button" id="prevBtn" class="prev-btn btn btn-sm btn-outline-light">
-                    <</button> </div> <div class="col-lg-4 col-md-4 col-xs-6 txt_here">
-                        <h1 class="nb_here"></h1>
+                <button type="button" id="prevBtn" class="prev-btn btn btn-sm btn-outline-light"><</button> 
+            </div>
+             <div class="col-lg-4 col-md-4 col-xs-6 txt_here">
+                <h1 class="nb-here"></h1>
             </div>
             <div class="col-lg-4 col-md-4 col-xs-6">
                 <button type="button" id="nextBtn" class="next-btn btn btn-sm btn-outline-light">></button>
             </div>
-            <button type="button" class="btn btn-light affA">Afficher Réponse</button>
+            <button type="button" class="btn btn-light affA">Afficher la réponse</button>
         </div>
         <div class="flashCards div1">
             <div class="flashCards-content">
@@ -138,9 +137,9 @@
         </div>
 
     </div>
-    <script src="js/app.js"></script>
+    <!--<script src="js/app.js"></script>
     <script src="js/tri.js"></script>
-    <script src="js/animation.js"></script>
+    <script src="js/animation.js"></script>-->
     <script src="js/script.js"></script>
 </body>
 

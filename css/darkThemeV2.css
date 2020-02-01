@@ -62,8 +62,8 @@ body {
 .asside {
     height: 100%;
     position: absolute;
-    width: 300px;
-    max-width: 295px !important;
+    width: 17%;
+    max-width: 17% !important;
     background-color: #1f2327;
     float: left;
     padding: 25px;
@@ -284,4 +284,16 @@ drop {
             padding: 50px;
         }
     }
+}
+
+.uppasside {
+    align-self: auto;
+}
+
+.arrow-down::after {
+    content: "▾";
+}
+
+.arrow-up::after {
+    content: "▴";
 }
