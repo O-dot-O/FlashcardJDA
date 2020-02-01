@@ -1,13 +1,15 @@
-<!doctype html>
-
-<html lang="fr">
+﻿<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flash Cards - JDA</title>
+    <link rel="stylesheet" href="darkThemeV2.css">
     <link rel="icon" type="image/svg" href="media/ODot Logo.svg">
     <title>Flashcard JDA</title>
     <meta name="description" content="Un simple moyen de réviser !">
-    <meta name="author" content="Boudial">
+    <meta name="author" content="Boudial and Luxo22">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -23,75 +25,124 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
-    <!--Début de la partie récurrente-->
-    <div class="sidenav">
-        <!--Début du menu latéral-->
-        <button class="dropdown-btn">Classe de Sixième <i class="fas fa-caret-down"></i></button>
-        <div class="dropdown-container">
-            <a href="#">Francais</a>
-            <a href="#">Mathematiques</a>
-            <a href="#">Histoire</a>
-            <a href="#">Geographie</a>
+    <nav class="navbar">
+        <div class="links">
+            <h4 style="display: inline;position: relative;" href="index.html">FlashCards-JDA</h4>
+            <div style="margin : none; width : 40%;position: relative;left : 0px;" class="separator"></div>
+            <a href="liste.html">Liste</a>
+            <a href="mailto:nicolasgiannettini1@gmail.com">Contacte</a>
+            <a href="#">Plus</a>
         </div>
-        <button class="dropdown-btn">Classe de Cinquième <i class="fas fa-caret-down"></i></button>
-        <div class="dropdown-container">
-            <a href="#">Francais</a>
-            <a href="#">Mathematiques</a>
-            <a href="#">Histoire</a>
-            <a href="#">Geographie</a>
+    </nav>
+    <asside class="asside container-fluid">
+        <h2>FlashCards-JDA</h2>
+        <div class="separator"></div>
+        <h2 class="asside-header">Catégorie</h2>
+        <form class="form-group" action="#" method="get">
+            <input type="text" placeholder="Entrer n° Carte voulue" class="numero form-control">
+        </form>
+        <ul class="matierre">
+            <div class="needed">
+                <drop class="bug">
+                    <span class="bug txt">Brevet <span class="tUp">&blacktriangle;</span><span
+                            class="tDown">&blacktriangledown;</span></span>
+                    <nav class="navbarr">
+
+                        <ul class="matierre matierre1">
+                            <li><a class="DropDown brevet math" href="#">Mathématique</a></li>
+                            <li><a class="DropDown brevet fran" href="#">Français</a></li>
+                            <li><a class="DropDown brevet angl" href="#">Anglais</a></li>
+                            <li><a class="DropDown brevet phys" href="#">Physique</a></li>
+                            <li><a class="DropDown brevet svt" href="#">S.V.T</a></li>
+                            <li><a class="DropDown brevet tech" href="#">Technologie</a></li>
+                            <li><a class="DropDown brevet hist" href="#">Histoire</a></li>
+                            <li><a class="DropDown brevet Geog" href="#">Géographie</a></li>
+                            <li><a class="DropDown brevet emc" href="#">EMC</a></li>
+                            <li><a class="DropDown brevet musi" href="#">Musique</a></li>
+                            <li><a class="DropDown brevet art" href="#">Art</a></li>
+                        </ul>
+                    </nav>
+                </drop>
+            </div>
+
+            <div class="needed">
+                <drop class="bug2">
+                    <span class="bug2 txt">Bac <span class="tUp2">&blacktriangle;</span><span
+                            class="tDown2">&blacktriangledown;</span></span></span>
+                    <nav class="navbarr">
+
+                        <ul class="matierre matierre2">
+                            <li><a class="DropDown2 bac math" href="#">Mathématique</a></li>
+                            <li><a class="DropDown2 bac fran" href="#">Français</a></li>
+                            <li><a class="DropDown2 bac angl" href="#">Anglais</a></li>
+                            <li><a class="DropDown2 bac phys" href="#">Physique</a></li>
+                            <li><a class="DropDown2 bac svt" href="#">S.V.T</a></li>
+                            <li><a class="DropDown2 bac tech" href="#">Technologie</a></li>
+                            <li><a class="DropDown2 bac hist" href="#">Histoire</a></li>
+                            <li><a class="DropDown2 bac Geog" href="#">Géographie</a></li>
+                            <li><a class="DropDown2 bac emc" href="#">EMC</a></li>
+                            <li><a class="DropDown2 bac art" href="#">Art</a></li>
+                            <li><a class="DropDown2 bac espa" href="#">Espagnol</a></li>
+                            <li><a class="DropDown2 bac sport" href="#">Sport</a></li>
+                        </ul>
+                    </nav>
+                </drop>
+            </div>
+        </ul>
+
+        <h2 class="asside-header">Autre</h2>
+        <ul class="matierre">
+            <li><a href="liste.html">Listes et Matière</a></li>
+            <li><a href="mailto:nicolasgiannettini1@gmail.com">Contactez nous</a></li>
+            <li><a href="#">Plus d'information</a></li>
+        </ul>
+
+        <h2 class="asside-header">Fondateur</h2>
+        <ul class="matierre">
+            <li><a href="#">Nicolas Giannettini</a></li>
+            <li><a href="#">Maxence Raynal</a></li>
+
+        </ul>
+
+
+    </asside>
+    <div class="main container-fluid">
+        <div class="row row-counter">
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <button type="button" id="prevBtn" class="prev-btn btn btn-sm btn-outline-light">
+                    <</button> </div> <div class="col-lg-4 col-md-4 col-xs-6 txt_here">
+                        <h1 class="nb_here"></h1>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <button type="button" id="nextBtn" class="next-btn btn btn-sm btn-outline-light">></button>
+            </div>
+            <button type="button" class="btn btn-light affA">Afficher Réponse</button>
         </div>
-        <button class="dropdown-btn">Classe de Quatrième <i class="fas fa-caret-down"></i></button>
-        <div class="dropdown-container">
-            <a href="#">Francais</a>
-            <a href="#">Mathematiques</a>
-            <a href="#">Histoire</a>
-            <a href="#">Geographie</a>
+        <div class="flashCards div1">
+            <div class="flashCards-content">
+                <div class="flashCards-header">
+                    <h3>EMC</h3>
+                </div>
+                <div class="flashCards-text">
+                    <p>En quelle année le traité de <span class="text-success">Maastricht</span> a t'il été signé ?</p>
+                </div>
+                <div class="ans">
+                    <p class="answer alert alert-primary">Le traité de <span class="text-success">Maastricht</span> a
+                        été signé en 1992</p>
+                </div>
+                <div class="littleplus">
+                    <p>Attention à l'orthographe de Maastricht !</p>
+                </div>
+            </div>
         </div>
-        <button class="dropdown-btn">Classe de Troisième <i class="fas fa-caret-down"></i></button>
-        <div class="dropdown-container">
-            <a href="#">Francais</a>
-            <a href="#">Mathematiques</a>
-            <a href="#">Histoire</a>
-            <a href="#">Geographie</a>
-        </div>
-        <button class="dropdown-btn">Classe de Seconde <i class="fas fa-caret-down"></i></button>
-        <div class="dropdown-container">
-            <a href="#">Francais</a>
-            <a href="#">Mathematiques</a>
-            <a href="#">Histoire</a>
-            <a href="#">Geographie</a>
-        </div>
-        <button class="dropdown-btn">Classe de Première <i class="fas fa-caret-down"></i></button>
-        <div class="dropdown-container">
-            <a href="#">Francais</a>
-            <a href="#">Mathematiques</a>
-            <a href="#">Histoire</a>
-            <a href="#">Geographie</a>
-        </div>
-        <button class="dropdown-btn">Classe de Terminale <i class="fas fa-caret-down"></i></button>
-        <div class="dropdown-container">
-            <a href="#">Francais</a>
-            <a href="#">Mathematiques</a>
-            <a href="#">Histoire</a>
-            <a href="#">Geographie</a>
-        </div>
+
     </div>
-    <!--Fin du menu latéral-->
-    <main>
-        <header>
-            <div class="headercontent"><i class="fas fa-arrow-left"></i></div>
-            <div class="headercontent"><a>Accueil</a></div>
-        </header>
-        <!--Fin de la partie récurrente-->
-        <div class="maincontent">
-        </div>
-
-    </main>
-
+    <script src="app.js"></script>
+    <script src="tri.js"></script>
+    <script src="animation.js"></script>
 </body>
 
 </html>
