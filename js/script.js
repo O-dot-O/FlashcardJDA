@@ -40,8 +40,8 @@
 	  }
 	  function populateHeader(jsonObj) {
 		  var myName = document.createElement("h5");
-		  myName.textContent = jsonObj[1]["name"];
-		  header.appendChild(myName);
+		  myName.textContent = jsonObj["number"];
+		  console.log(myName);
 
 	  }
   });
