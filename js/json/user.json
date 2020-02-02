@@ -1,5 +1,10 @@
-{
-    "number" : 1,
-    "matiere" : "Anglais",
-    "contenu" : ["Nicolas c'est le plus joli et ca ne changera jamais !"]  
-}
+[
+    {
+        "name" : "Nicolas",
+        "firstName" : "Giannettini"
+    },
+    {
+        "name": "Maxence",
+        "firstName": "InfectionRaynal"
+    }
+]
