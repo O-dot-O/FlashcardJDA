@@ -1,97 +1,154 @@
-<!doctype html>
+﻿<!DOCTYPE html>
+<html lang="en">
 
-<html lang="fr">
-
-<head>
-    <meta charset="utf-8">
-    <link rel="icon" type="image/svg" href="media/ODot Logo.svg">
-    <title>Flashcard JDA</title>
-    <meta name="description" content="Un simple moyen de réviser !">
-    <meta name="author" content="Boudial">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
-    <script src="https://kit.fontawesome.com/4ea6fff15a.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/w3.css">
-    <link rel="stylesheet" href="css/style.css">
-
-</head>
-
-<body>
-    <!--Début de la partie récurrente-->
-    <div class="sidenav">
-        <!--Début du menu latéral-->
-        <button class="dropdown-btn">Classe de Sixième <i class="fas fa-caret-down"></i></button>
-        <div class="dropdown-container">
-            <a href="#">Francais</a>
-            <a href="#">Mathematiques</a>
-            <a href="#">Histoire</a>
-            <a href="#">Geographie</a>
+    <div class="main container-fluid">
+        <div class="row row-counter">
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <button type="button" id="prevBtn" class="prev-btn btn btn-sm btn-outline-light"><</button>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6 txt_here">
+                <h1 class="nb_here"></h1>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <button type="button" id="nextBtn" class="next-btn btn btn-sm btn-outline-light">></button>
+            </div>
+            <button type="button" class="btn btn-light affA">Afficher Réponse</button>
         </div>
-        <button class="dropdown-btn">Classe de Cinquième <i class="fas fa-caret-down"></i></button>
-        <div class="dropdown-container">
-            <a href="#">Francais</a>
-            <a href="#">Mathematiques</a>
-            <a href="#">Histoire</a>
-            <a href="#">Geographie</a>
-        </div>
-        <button class="dropdown-btn">Classe de Quatrième <i class="fas fa-caret-down"></i></button>
-        <div class="dropdown-container">
-            <a href="#">Francais</a>
-            <a href="#">Mathematiques</a>
-            <a href="#">Histoire</a>
-            <a href="#">Geographie</a>
-        </div>
-        <button class="dropdown-btn">Classe de Troisième <i class="fas fa-caret-down"></i></button>
-        <div class="dropdown-container">
-            <a href="#">Francais</a>
-            <a href="#">Mathematiques</a>
-            <a href="#">Histoire</a>
-            <a href="#">Geographie</a>
-        </div>
-        <button class="dropdown-btn">Classe de Seconde <i class="fas fa-caret-down"></i></button>
-        <div class="dropdown-container">
-            <a href="#">Francais</a>
-            <a href="#">Mathematiques</a>
-            <a href="#">Histoire</a>
-            <a href="#">Geographie</a>
-        </div>
-        <button class="dropdown-btn">Classe de Première <i class="fas fa-caret-down"></i></button>
-        <div class="dropdown-container">
-            <a href="#">Francais</a>
-            <a href="#">Mathematiques</a>
-            <a href="#">Histoire</a>
-            <a href="#">Geographie</a>
-        </div>
-        <button class="dropdown-btn">Classe de Terminale <i class="fas fa-caret-down"></i></button>
-        <div class="dropdown-container">
-            <a href="#">Francais</a>
-            <a href="#">Mathematiques</a>
-            <a href="#">Histoire</a>
-            <a href="#">Geographie</a>
+    <div class = "flashCards div1">
+        <div class="flashCards-content">
+            <div class="flashCards-header">
+                <h3>EMC</h3>
+            </div>
+            <div class="flashCards-text">
+                <p>En quelle année le traité de <span class="text-success">Maastricht</span> a t'il été signé ?</p>
+            </div>
+            <div class="ans">
+                <p class="answer alert alert-primary">Le traité de  <span class="text-success">Maastricht</span> a été signé en 1992</p>
+               </div>
+               <div class="littleplus">
+                 <p>Attention à l'orthographe de Maastricht !</p>
+               </div>
         </div>
     </div>
-    <!--Fin du menu latéral-->
-    <main>
-        <header>
-            <div class="headercontent"><i class="fas fa-arrow-left"></i></div>
-            <div class="headercontent"><a>Accueil</a></div>
-        </header>
-        <!--Fin de la partie récurrente-->
-        <div class="maincontent">
+
+    <div class = "flashCards div2">
+        <div class="flashCards-content">
+            <div class="flashCards-header">
+                <h3>EMC</h3>
+            </div>
+            <div class="flashCards-text">
+                <p>En quelle année le droit de vote est-il accordé aux femmes ?</p>
+            </div>
+            <div class="ans">
+                <p class="answer alert alert-primary">Le droit de vote est accordé aux femmes en 1944 !</p>
+            </div>
         </div>
+    </div>
 
-    </main>
+    <div class = "flashCards div3">
+        <div class="flashCards-content">
+            <div class="flashCards-header">
+                <h3>EMC</h3>
+            </div>
+            <div class="flashCards-text">
+                <p>Depuis quand le statut de citoyen existe t-il ?</p>
+            </div>
+            <div class="ans">
+                <p class="answer alert alert-primary">Il existe depuis l'Antiquité Grec</p>
+            </div>
+        </div>
+    </div>
 
+    <div class = "flashCards div4">
+        <div class="flashCards-content">
+            <div class="flashCards-header">
+                <h3>Les Fonctions</h3>
+            </div>
+            <div class="flashCards-text">
+                <p>Si l'on a h(x) = 12x² + 3x + 2<br>Quel est la valeur de h(3) ?</p>
+            </div>
+            <div class="ans">
+                <p class="answer alert alert-primary">Si h(x) = 12x² + 3x + 2 alors h(3) = 12*3² + 3 * 3 + 2 soit 12*9 + 9 + 2 qui est égal à  <span class="text-success">119</span></p>
+                </div>
+                <div class="littleplus">
+                    <p>12 * 9 = 108<br>108 + 11 = 119<br>h(x) se prononce "H de x"</p>
+                  </div>
+            
+        </div>
+    </div>
+    <div class = "flashCards div5">
+        <div class="flashCards-content">
+            <div class="flashCards-header">
+                <h3>Les Fonction</h3>
+            </div>
+            <div class="flashCards-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quo, dicta delectus illo deleniti autem vero, corporis distinctio perferendis quaerat minus, eaque ad quos. Dolores earum hic fugiat nobis nostrum repellat error aspernatur consectetur molestiae, fugit explicabo tempora placeat itaque cumque eligendi asperiores commodi necessitatibus odio expedita provident repudiandae natus.</p>
+            </div>
+            <div class="ans">
+                <p class="answer alert alert-primary">Mme.Culetto c'est la plus gentille !</p>
+            </div>
+        </div>
+    </div>
+
+    <div class = "flashCards div6">
+        <div class="flashCards-content">
+            <div class="flashCards-header">
+                <h3>Les Fonction</h3>
+            </div>
+            <div class="flashCards-text">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quo, dicta delectus illo deleniti autem vero, corporis distinctio perferendis quaerat minus, eaque ad quos. Dolores earum hic fugiat nobis nostrum repellat error aspernatur consectetur molestiae, fugit explicabo tempora placeat itaque cumque eligendi asperiores commodi necessitatibus odio expedita provident repudiandae natus.</p>
+            </div>
+            <div class="ans">
+                <p class="answer alert alert-primary">Nicolas c'est le plus jolie !</p>
+            </div>
+        </div>
+    </div>
+
+    <div class = "flashCards div7">
+        <div class="flashCards-content">
+            <div class="flashCards-header">
+                <h3>Les Fonction</h3>
+            </div>
+            <div class="flashCards-text">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quo, dicta delectus illo deleniti autem vero, corporis distinctio perferendis quaerat minus, eaque ad quos. Dolores earum hic fugiat nobis nostrum repellat error aspernatur consectetur molestiae, fugit explicabo tempora placeat itaque cumque eligendi asperiores commodi necessitatibus odio expedita provident repudiandae natus.</p>
+            </div>
+            <div class="ans">
+                <p class="answer alert alert-primary">Nicolas c'est le plus jolie !</p>
+            </div>
+        </div>
+    </div>
+
+    <div class = "flashCards div8">
+        <div class="flashCards-content">
+            <div class="flashCards-header">
+                <h3>Les Fonction</h3>
+            </div>
+            <div class="flashCards-text">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quo, dicta delectus illo deleniti autem vero, corporis distinctio perferendis quaerat minus, eaque ad quos. Dolores earum hic fugiat nobis nostrum repellat error aspernatur consectetur molestiae, fugit explicabo tempora placeat itaque cumque eligendi asperiores commodi necessitatibus odio expedita provident repudiandae natus.</p>
+            </div>
+            <div class="ans">
+                <p class="answer alert alert-primary">Nicolas c'est le plus jolie !</p>
+            </div>
+        </div>
+    </div>
+
+    <div class = "flashCards div9">
+        <div class="flashCards-content">
+            <div class="flashCards-header">
+                <h3>Les Fonction</h3>
+            </div>
+            <div class="flashCards-text">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quo, dicta delectus illo deleniti autem vero, corporis distinctio perferendis quaerat minus, eaque ad quos. Dolores earum hic fugiat nobis nostrum repellat error aspernatur consectetur molestiae, fugit explicabo tempora placeat itaque cumque eligendi asperiores commodi necessitatibus odio expedita provident repudiandae natus.</p>
+            </div>
+            <div class="ans">
+                <p class="answer alert alert-primary">Nicolas c'est le plus jolie !</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <script src="app.js"></script>
+    <script src="tri.js"></script>
+    <script src="animation.js"></script>
 </body>
-
 </html>

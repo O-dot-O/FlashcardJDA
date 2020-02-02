@@ -1,0 +1,58 @@
+[
+    {
+        "name" : "Nicolas",
+        "firstName" : "Giannettini",
+        "age" : 13,
+        "class" : "3e",
+        "friends" : [{
+            "name" : "Evans",
+            "friends" : ["Pauline",
+                "Bryan",
+                "Jaqueline"
+            ]},
+            "Pauline",
+            "Valentine",
+            "Mahni",
+            "Maxence"
+        ]
+    },
+    {
+        "name" : "Ambre",
+        "firstName" : "Durand",
+        "age" : 14,
+        "class" : "3e",
+        "friends" : [
+            "Anis",
+            "Camille",
+            "Antoine",
+            "Mahni",
+            "Mathilde"
+        ]
+    },
+    {
+        "name" : "Thomas",
+        "firstName" : "Alrivie",
+        "age" : 14,
+        "class" : "3e",
+        "friends" : [
+            "Maxime",
+            "Antoine",
+            "Simon",
+            "Solenne"
+        ]
+    },
+    {
+        "name" : "Bryan",
+        "firstName" : "Chambepont",
+        "age" : 13,
+        "class" : "5e",
+        "friends" : [
+            "Elea",
+            "Lilou",
+            "Ioulia",
+            "Malya",
+            "Clément",
+            "Maxime"
+        ]
+    }
+]

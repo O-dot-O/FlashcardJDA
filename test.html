@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="darkThemeV2.css">
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-lg-5" style="background-color: #1df1f1;">
+            <div class="col-lg-12 render" style="height : 50px; background-color: #111111;">
+            </div>
+            <div class="option col-lg-3 bg-dark border border-primary">
+                +
+            </div>
+            <div class="option col-lg-3 bg-dark border border-primary">
+                -
+            </div>
+            <div class="option col-lg-3 bg-dark border border-primary">
+                /
+            </div>
+            <div class="option col-lg-3 bg-dark border border-primary">
+                *
+            </div>
+            <div class=" number col-lg-4 border border-primary">
+                <input type="button" class="btn w-100" value="1">
+            </div>
+            <div class=" number col-lg-4 border border-primary">
+                <input type="button" class="btn w-100" value="2">
+            </div>
+            <div class=" number col-lg-4 border border-primary">
+                <input type="button" class="btn w-100" value="3">
+            </div>
+            <div class=" number col-lg-4 border border-primary">
+                <input type="button" class="btn w-100" value="4">
+            </div>
+            <div class=" number col-lg-4 border border-primary">
+                <input type="button" class="btn w-100" value="5">
+            </div>
+            <div class=" number col-lg-4 border border-primary">
+                <input type="button" class="btn w-100" value="6">
+            </div>
+            <div class=" number col-lg-4 border border-primary">
+                <input type="button" class="btn w-100" value="7">
+            </div>
+            <div class="number col-lg-4 border border-primary">
+                <input type="button" class="btn w-100" value="8">
+            </div>
+            <div class="number col-lg-4 border border-primary">
+                <input type="button" class="btn w-100" value="9">
+            </div>
+            <div class="number col-lg-12 border border-primary">
+                <input type="button" class="btn w-100" value="0">
+            </div>
+        </div>
+    </div>
+
+<div class="container mt-lg-5">
+    <form method="dialog">
+        <input placeholder="Entrez un prénom" required class="form-control" id="name">
+        <input placeholder="Entrez un nom" required class="form-control" id="first-name">
+        <input placeholder="Entrez un age" required class="form-control" id="age">
+        <input placeholder="Entrez une classe" required class="form-control" id="classe">
+        <input placeholder="Entrez le noms des amis de cette personne" required class="form-control" id="friends">
+        <input type="button" id="btn" class="btn btn-md btn-outline-primary w-100" value="Ajouter">
+    </form>
+</div>
+    <table class="container table-active table-info mt-lg-4 text-success table-bordered table">
+       <thead>
+            <th>Prénom</th>
+            <th>Nom</th>
+            <th>Age</th>
+            <th>Classe</th>
+            <th>Friends</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script src="json.js"></script>
+    <script src="calc.js"></script>
+</body>
+</html>
