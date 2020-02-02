@@ -23,4 +23,7 @@
 		  $(this).toggleClass("arrow-down");
 		  $(this).toggleClass("arrow-up");
 	  });
+	  $(".menuicocontainer").click(function () {
+		$(this).toggleClass("changetoN");
+	  });
   });
