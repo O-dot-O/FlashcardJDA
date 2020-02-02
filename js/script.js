@@ -1,4 +1,5 @@
   var cardNumber = 0;
+  let header = document.querySelectorAll('header .heade');
   $(document).ready(function () {
 
   	$(".nb-here").text(cardNumber);
@@ -26,18 +27,21 @@
 	  $(".menuicocontainer").click(function () {
 		$(this).toggleClass("changetoN");
 	  });
-	  let requestURL = 'json/user.json';
-	  let request = new XMLHttpRequest();
+	  //var requestURL = "json/user.json";
+	  var requestURL = 'https://raw.githubusercontent.com/O-dot-O/FlashcardJDA/version-2/js/json/user.json';
+	  var request = new XMLHttpRequest();
 	  request.open('GET', requestURL);
-	  request.responseType = 'json';
+	  request.responseType = "json";
 	  request.send();
 
 	  request.onload = function () {
-	  	let waiting = request.response;
-	  	populateHeader(waiting);
+	  	var waiting = request.response;
+		populateHeader(waiting);
 	  }
-	  request.onload = function () {
-		  let raiponce = request.response;
-		  cardNumber = raiponce['number'];
+	  function populateHeader(jsonObj) {
+		  var myName = document.createElement("h5");
+		  myName.textContent = jsonObj[1]["name"];
+		  header.appendChild(myName);
+
 	  }
   });
