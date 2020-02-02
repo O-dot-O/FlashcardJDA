@@ -17,7 +17,7 @@ body {
     padding: 0;
     background-color: #1f2327;
     color: #fff;
-    min-width: 900px;
+
 }
 
 .main {
@@ -62,8 +62,8 @@ body {
 .asside {
     height: 100%;
     position: absolute;
-    width: 17%;
-    max-width: 17% !important;
+    width: 295px;
+    max-width: 295px !important;
     background-color: #1f2327;
     float: left;
     padding: 25px;
@@ -223,77 +223,98 @@ drop {
 }
 
 @media (max-width : 992px) {
-    @media (min-width : 900px) {
-        .main {
-            position: absolute;
-            width: 100%;
-            height: calc(100% - 200px);
-            top: 150px;
-            left: 0;
-        }
 
-        .asside {
-            position: absolute;
+    .main {
+        position: absolute;
+        width: 100%;
+        height: calc(100% - 200px);
+        top: 150px;
+        left: 0;
+    }
+
+    .asside {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .links a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #fff;
+        opacity: .8;
+    }
+
+    .links a:hover {
+        opacity: 1;
+        transition: .3s;
+    }
+
+    drop.bug,
+    drop.bug2 {
+        position: absolute;
+        visibility: visible;
+        top: 50px;
+        right: -200%;
+    }
+
+    ul.matierre1 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        right: 0px;
+    }
+
+    ul.matierre2 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        right: 0px;
+    }
+
+    ul.matierre drop.bug {
+        right: -145%;
+    }
+
+    .navbar {
+        width: 97%;
+        height: 150px;
+        visibility: visible;
+        padding: 50px;
+    }
+
+    .btn {
+        margin: 5px;
+    }
+
+    @media (max-width: 750px) {
+        .navbar {
             visibility: hidden;
         }
 
-        .links a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #fff;
-            opacity: .8;
-        }
 
-        .links a:hover {
-            opacity: 1;
-            transition: .3s;
-        }
 
-        drop.bug,
-        drop.bug2 {
-            position: absolute;
-            visibility: visible;
-            top: 50px;
-            right: -200%;
-        }
-
-        ul.matierre1 {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            top: 40px;
-            right: 0px;
-        }
-
-        ul.matierre2 {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            top: 40px;
-            right: 0px;
-        }
-
-        ul.matierre drop.bug {
-            right: -145%;
-        }
-
-        .navbar {
-            width: 100%;
-            height: 150px;
-            visibility: visible;
-            padding: 50px;
-        }
     }
 }
 
+
 .uppasside {
     align-self: auto;
+
 }
 
 .arrow-down::after {
     content: "▾";
+    margin: 0px;
+    border: 0px;
+    font-weight: bolder;
+
 }
 
 .arrow-up::after {
     content: "▴";
+    margin: 0px;
+    border: 0px;
+    font-weight: bolder;
 }

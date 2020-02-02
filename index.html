@@ -27,21 +27,47 @@
 </head>
 
 <body>
+
     <nav class="navbar">
         <div class="links">
             <h4 style="display: inline;position: relative;" href="index.html">FlashCards-JDA</h4>
             <div style="margin : none; width : 40%;position: relative;left : 0px;" class="separator"></div>
-            <a href="liste.html">Liste</a>
-            <a href="mailto:nicolasgiannettini1@gmail.com">Contacte</a>
+            <!--<a href="liste.html">Liste</a>-->
+            <a href="mailto:nicolasgiannettini1@gmail.com">Contact</a>
             <a href="#">Plus</a>
         </div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle arrow-down btn btn-light" data-toggle="dropdown" href="#"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false">Bac </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Mathématiques</a>
+                    <a class="dropdown-item" href="#">Histoire</a>
+                    <a class="dropdown-item" href="#">Français</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle arrow-down btn btn-light" data-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false">Brevet </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Mathématiques</a>
+                    <a class="dropdown-item" href="#">Histoire</a>
+                    <a class="dropdown-item" href="#">Français</a>
+                </div>
+            </li>
+
+        </ul>
+
     </nav>
     <asside class="asside container-fluid">
         <h2 class="uppasside">FlashCards-JDA</h2>
         <div class="separator uppasside"></div>
         <h2 class="asside-header">Catégorie</h2>
-        <form class="form-group" action="#" method="get">
-            <input type="text" placeholder="Entrer n° Carte voulue" class="numero form-control">
+        <form class="form-inline" action="#" method="get">
+            <input type="search" placeholder="Numéro de carte" class="numero form-control mr-sm-2">
         </form>
         <ul class="matierre">
             <div class="needed">
@@ -91,7 +117,7 @@
 
         <h2 class="asside-header">Autre</h2>
         <ul class="matierre">
-            <li><a href="liste.html">Listes et Matière</a></li>
+            <!--<li><a href="liste.html">Listes et Matière</a></li>-->
             <li><a href="mailto:nicolasgiannettini1@gmail.com">Contactez nous</a></li>
             <li><a href="#">Plus d'information</a></li>
         </ul>
@@ -108,13 +134,12 @@
     <div class="main container-fluid">
         <div class="row row-counter">
             <div class="col-lg-4 col-md-4 col-xs-6">
-                <button type="button" id="prevBtn" class="prev-btn btn btn-sm btn-outline-light"><</button> 
-            </div>
-             <div class="col-lg-4 col-md-4 col-xs-6 txt_here">
-                <h1 class="nb-here"></h1>
+                <button type="button" id="prevBtn" class="prev-btn btn btn-light">
+                    <</button> </div> <div class="col-lg-4 col-md-4 col-xs-6 txt_here">
+                        <h1 class="nb-here"></h1>
             </div>
             <div class="col-lg-4 col-md-4 col-xs-6">
-                <button type="button" id="nextBtn" class="next-btn btn btn-sm btn-outline-light">></button>
+                <button type="button" id="nextBtn" class="next-btn btn btn-light">></button>
             </div>
             <button type="button" class="btn btn-light affA">Afficher la réponse</button>
         </div>

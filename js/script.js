@@ -18,5 +18,9 @@
   	$(".next-btn").click(function () {
 		  cardNumber++
 		  $(".nb-here").text(cardNumber);
-  	});
+	  });
+	  $(".dropdown-toggle").click(function () {
+		  $(this).toggleClass("arrow-down");
+		  $(this).toggleClass("arrow-up");
+	  });
   });
