@@ -357,7 +357,8 @@ drop {
             display: inline-block;
         }
         .phoneNav div a i {
-            
+            position: absolute;
+            right : 5vw;
             font-size: 40px;
             
         }

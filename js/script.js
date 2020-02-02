@@ -26,4 +26,18 @@
 	  $(".menuicocontainer").click(function () {
 		$(this).toggleClass("changetoN");
 	  });
+	  let requestURL = 'json/user.json';
+	  let request = new XMLHttpRequest();
+	  request.open('GET', requestURL);
+	  request.responseType = 'json';
+	  request.send();
+
+	  request.onload = function () {
+	  	let waiting = request.response;
+	  	populateHeader(waiting);
+	  }
+	  request.onload = function () {
+		  let raiponce = request.response;
+		  cardNumber = raiponce['number'];
+	  }
   });
