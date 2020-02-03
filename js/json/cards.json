@@ -1,0 +1,18 @@
+[
+    {
+        "number": 0,
+        "title": "Bienvenue sur Flashcard JDA",
+        "question": "C'est un simple moyen d'apprendre",
+        "answer": "OUI",
+        "isNote": true,
+        "Note": "C'est vrai"
+    },
+    {
+        "number": 1,
+        "title": "EMC",
+        "question": "En quelle année le traité de Maastricht a t'il été signé ?",
+        "answer": "1992",
+        "isNote": true,
+        "Note": "Attention à l'orthographe de Maastricht !"
+    }
+]

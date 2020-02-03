@@ -14,10 +14,12 @@
 			  cardNumber = 0;
 		  }
 		  $(".nb-here").text(cardNumber);
+		  LoadCard(cardNumber);
   	});
   	$(".next-btn").click(function () {
 		  cardNumber++
 		  $(".nb-here").text(cardNumber);
+		  LoadCard(cardNumber);
 	  });
 	  $(".dropdown-toggle").click(function () {
 		  $(this).toggleClass("arrow-down");
