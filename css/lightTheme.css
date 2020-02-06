@@ -1,0 +1,68 @@
+* {
+    scrollbar-color: #dadada #929292;
+    -webkit-scrollbar-color: #dadada #929292;
+}
+
+::-webkit-scrollbar-track {
+    background: #dadada;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #929292;
+}
+
+body {
+    background-color: #1f2327;
+    color: #fff;
+
+}
+
+.links a {
+    color: #fff;
+}
+
+.main {
+    background-color: #5c5c5c;
+}
+
+.flashCards {
+    background-color: #fff;
+    color: #343a40;
+}
+
+.separator {
+    background-color: #007bff;
+}
+
+.asside {
+    background-color: #1f2327;
+}
+
+.matierre h2 {
+    text-decoration: #000000 solid 2px;
+}
+
+.matierre a {
+    color: #fff;
+}
+
+.categorie a {
+    color: #fff;
+}
+
+.bug .txt {
+    color: #fff;
+}
+
+.bug2 .txt {
+    color: #fff;
+}
+
+.navbarr .matierre,
+.navbarr .categorie {
+    background-color: #0055b0;
+}
+
+.navbarr .categorie {
+    color: #fff;
+}

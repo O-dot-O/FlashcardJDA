@@ -1,7 +1,6 @@
-[
-    {
+[{
         "number": 0,
-        "title": "Bienvenue sur Flashcard JDA",
+        "title": "Bienvenue sur Flashcards JDA",
         "question": "C'est un simple moyen d'apprendre",
         "answer": "OUI",
         "isNote": true,
@@ -13,6 +12,14 @@
         "question": "En quelle année le traité de Maastricht a t'il été signé ?",
         "answer": "1992",
         "isNote": true,
-        "Note": "Attention à l'orthographe de Maastricht !"
+        "Note": "Attention à l'orthographe de <a href>Maastricht</a> !"
+    },
+    {
+        "number": 2,
+        "title": "Physique",
+        "question": "Combien représente 3 cm cube en litre ?",
+        "answer": "0,003",
+        "isNote": true,
+        "Note": "diviser x par 1000 pour trouver la valeur en litre"
     }
 ]
