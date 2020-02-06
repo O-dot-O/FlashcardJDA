@@ -1,0 +1,10 @@
+[
+    {
+        "name" : "Nicolas",
+        "firstName" : "Giannettini"
+    },
+    {
+        "name": ["Maxence","MicroZIZI","ToutRIKIKI"],
+        "firstName": "InfectionRaynal"
+    }
+]
