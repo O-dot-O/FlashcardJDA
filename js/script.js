@@ -1,3 +1,4 @@
+var modal = document.getElementById("theModal");
 let title = document.querySelector(".FCTitle");
 let question = document.querySelector(".FCQuestion");
 let answer = document.querySelector(".FCAnswer");
@@ -60,4 +61,15 @@ $(document).ready(function() {
     var newUrl;
     $(".themeLoc").attr("href", newUrl);
   });*/
+  $(".modalbtn").click(function() {
+    modal.style.display = "block";
+  });
+  $(".close").click(function() {
+    modal.style.display = "none";
+  });
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
 });
