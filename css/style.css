@@ -391,3 +391,8 @@ drop {
     text-decoration: none;
     cursor: pointer;
   } 
+
+  .col-md-4 {
+      flex: auto;
+      max-width: 1%;
+  }
