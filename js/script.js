@@ -11,8 +11,8 @@ function load() {
   request.responseType = "json";
   request.send();
   request.onload = function() {
-    var loved = request.response;
-    LoadCard(loved);
+    var loed = request.response;
+    LoadCard(loed);
   };
 
   function LoadCard(jsonObj) {
