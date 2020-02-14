@@ -9,21 +9,15 @@
     <meta name="description" content="Un simple moyen de réviser !">
     <meta name="author" content="OdotO">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
-    <script src="https://kit.fontawesome.com/4ea6fff15a.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/w3.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/darkTheme.css">
+    <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css">
+    <script src="fontawesome-free-5.12.0-web/js/all.js"></script>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css"> 
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">  -->
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/darkThemeV2.css">
 </head>
 
 <body>
@@ -117,22 +111,9 @@
         <h2 class="asside-header">Autre</h2>
         <ul class="matierre">
             <!--<li><a href="liste.html">Listes et Matière</a></li>-->
-            <li><a href="#" class="modalbtn">Contactez nous </a><i style="padding : 4px;" class="fa fa-envelope" aria-hidden="true"></i>
-                <div id="theModal" class="modal">
-
-                    
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <p>Contactez nous de préférence en utilisant notre serveur Discord : <br>
-                            <iframe src="https://discordapp.com/widget?id=675387452495495170&theme=dark" width="100%" height="400" allowtransparency="true" frameborder="0"></iframe></p>
-                    </div>
-
-                </div>
-            </li>
-            <li><a href="#">Plus d'information</a><i style="padding : 2px" class="fa fa-info-circle"
-                    aria-hidden="true"></i></li>
-            <li><a href="themes.html">Thèmes</a><i style="padding: 4px;" class="fa fa-clipboard" aria-hidden="true"></i>
-            </li>
+            <li><a href="mailto:nicolasgiannettini1@gmail.com">Contactez nous </a><i style="margin : 4px;" class="fa fa-envelope" aria-hidden="true"></i></li>
+            <li><a href="#">Plus d'information</a><i style="margin : 2px" class="fa fa-info-circle" aria-hidden="true"></i></li>
+            <li><a href="themes.html">Thèmes</a><i style="margin: 4px;" class="fa fa-clipboard" aria-hidden="true"></i></li>
         </ul>
 
         <h2 class="asside-header">Fondateurs</h2>
@@ -147,11 +128,11 @@
     <nav class="phoneNav nav">
         <div class="nav-item">
             <h1>FlashCards-JDA</h1>
-
+            
         </div>
         <div class="justify-content-end nav-item">
-            <a href="#"><i class="fa fa-bars" style="color : #ffffff"></i></a>
-        </div>
+        <a href="#" class="bars"><i style="position: absolute;right : 5px;font-size : 40px;color : #ffffff" class="fa fa-bars"></i></a>
+    </div>
         <!--
         <div style="width: 9%;"></div>
         <div class="justify-content-end">
@@ -164,18 +145,29 @@
 
     </nav>
     <!--VVV  CONTENU DE LA PAGE  VVV-->
+    <div class="phone-more">
+        <div class="container-fluid">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Plus</a></li>
+                <li><a href="themes.html">Thème</a></li>
+                <li><a href="mailto:nicolasgiannettini1@gmail.com">Contactez nous</a></li>
+            </ul>
+        </div>
+ </div>
     <main class="main container-fluid" style="min-height: 100vh;">
         <div class="row row-counter">
-            <div class="col-lg-4 col-md-4 col-xs-6">
+            <p class="position"></p>
+            <div class="col-lg-4 col-md-4 col-xs-4">
                 <button type="button" id="prevBtn" class="prev-btn btn btn-light">
-                    <</button> </div> <div class="col-lg-4 col-md-4 col-xs-6 txt_here text-dark">
+                    <</button> </div> <div class="col-lg-4 col-md-4 col-xs-4 txt_here text-dark">
                         <h1 class="nb-here"></h1>
             </div>
-            <div class="col-lg-4 col-md-4 col-xs-6">
-                <button type="button" id="nextBtn" class="next-btn btn btn-light">></button>
+            <div class="col-lg-4 col-md-4 col-xs-4">
+                <button type="button" id="nextBtn" style="position: absolute;display: block;"class="next-btn btn btn-light">></button>
             </div>
-            <button type="button" class="btn btn-light affA">Afficher la réponse</button>
         </div>
+            <button type="button" class="btn btn-outline-primary affA">Afficher la réponse</button>
         <div class="flashCards div1">
             <div class="flashCards-content">
                 <div class="flashCards-header">
@@ -196,8 +188,8 @@
     <!--<script src="js/app.js"></script>
     <script src="js/tri.js"></script>
     <script src="js/animation.js"></script>-->
-    <script src="js/json/storagea.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/json/storagea.js"></script>
 </body>
 
 </html>
