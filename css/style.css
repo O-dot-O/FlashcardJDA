@@ -299,6 +299,7 @@ drop {
     }
 
     @media (max-width: 750px) {
+        
         .navbar {
             visibility: hidden;
         }
