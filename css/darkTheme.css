@@ -81,3 +81,11 @@ body {
 .close {
     color: #aaa;
 }
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn {
+    color: #aaa;
+}
