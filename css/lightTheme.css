@@ -35,9 +35,11 @@ url("/Rubik/Rubik-Regular.ttf"),; */
     scrollbar-color: #2e3236 #1f2327;
     -webkit-scrollbar-color: #2e3236 #1f2327;
 }
+
 :root {
-    --bleu : #3954ca;
+    --bleu: #3954ca;
 }
+
 ::-webkit-scrollbar-track {
     background: #1f2327;
 }
@@ -45,12 +47,14 @@ url("/Rubik/Rubik-Regular.ttf"),; */
 ::-webkit-scrollbar-thumb {
     background: #2e3236;
 }
+
 html {
-    width : 100%;
-    height : 100%;
+    width: 100%;
+    height: 100%;
 }
+
 body {
-    height : 100%;
+    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -60,17 +64,17 @@ body {
 }
 
 .main {
-    top : 0;
+    top: 0;
     position: absolute;
-    width : calc(100% - 22.00%);
-    height : 100%;
+    height: 100%;
     background-color: #ffffff;
-    color : #5b677d; 
+    color: #5b677d;
     position: relative;
-    float : right;
-    z-index : 2;
+    float: right;
+    z-index: 2;
 }
-    /* right : 0;
+
+/* right : 0;
     color : #5b677d;
     float: right;
     position: absolute;
@@ -85,7 +89,7 @@ body {
 .flashCards {
     margin: 4% 0px 22% 22%;
     background-color: #ffffff;
-    border : 1px solid #dfdfdf;
+    border: 1px solid #dfdfdf;
     color: #343a40;
     border-radius: 0%;
     min-width: 63%;
@@ -108,18 +112,18 @@ h2.uppasside::after {
     display: block;
     background-color: #007bff;
     width: calc(65%);
-    min-width : 226px;
+    min-width: 226px;
     height: 2px;
 }
 
 .asside {
-    width : 22.00%;
+    width: 22.00%;
     min-width: 22.00%;
-    height : 100vh;
+    height: 100vh;
     background-color: var(--bleu);
-    float : left;
+    float: left;
     padding: 37px;
-    color : #ffffff;
+    color: #ffffff;
     /*
     height: 100%;
     position: absolute;
@@ -180,7 +184,7 @@ h2.uppasside::after {
 }
 
 .footer {
-    clear : both;
+    clear: both;
 }
 
 .row-counter {
@@ -286,6 +290,7 @@ drop {
 .navbar {
     display: none;
 }
+
 /*
 .menuicocontainer {
     display: inline-block;
@@ -321,26 +326,30 @@ drop {
 .phone-more {
     display: none;
 }
+
 @media (max-width : 1422px) {
     .main {
-        z-index : 0;
+        z-index: 0;
         position: absolute;
         width: 100%;
         min-height: 100vh;
-        height : auto;
+        height: auto;
         top: 150px;
         left: 0;
     }
+
     .row-counter {
         margin-left: 15%;
     }
+
     .row .row-counter {
-        margin : 0;
-        padding : 0;
+        margin: 0;
+        padding: 0;
     }
+
     .btn .btn-light .affA {
         position: absolute;
-        float : right
+        float: right
     }
 
     .asside {
@@ -386,13 +395,16 @@ drop {
     ul.matierre drop.bug {
         right: -145%;
     }
+
     .nav-link {
-        margin-left : 4%;
+        margin-left: 4%;
     }
+
     body {
         background-color: #0055b0;
-        color : #fff;
+        color: #fff;
     }
+
     .navbar {
         width: 100%;
         height: 150px;
@@ -403,28 +415,35 @@ drop {
     .btn {
         margin: 5;
     }
+
     .affA {
-        margin-left : 12.5%;
+        margin-left: 12.5%;
     }
+
     .phone-more {
         display: none;
     }
+
     @media (max-width: 780px) {
         .main {
-            z-index:1;
+            z-index: 1;
         }
+
         .navbar {
             display: none;
         }
+
         .row-counter {
             margin-left: 12%;
             padding: 15px 15px 0 0;
             display: flex;
             flex-wrap: nowrap;
         }
-        .row-counter .next-btn{
+
+        .row-counter .next-btn {
             display: inline-block;
         }
+
         .phoneNav {
             display: inline-flex;
             width: 100%;
@@ -432,6 +451,7 @@ drop {
             left: 0;
             top: 0;
         }
+
         .phone-more::before {
             content: "";
             display: block;
@@ -441,20 +461,23 @@ drop {
             opacity: .8;
 
         }
+
         .phone-more {
             position: absolute;
             display: block;
-            margin : 0;
+            margin: 0;
             padding: 0;
-            z-index : 50;
-            width : 100%;
-            height : 100vh;
+            z-index: 50;
+            width: 100%;
+            height: 100vh;
             background-color: #0055b0;
-        }            
+        }
+
         .phone-more li {
             list-style: none;
             padding: 10px 0;
         }
+
         .phone-more a {
             color: white;
             width: 100%;
@@ -463,30 +486,37 @@ drop {
             font-size: 17px;
             display: block;
         }
-        .phone-more a:hover{
+
+        .phone-more a:hover {
             background-color: #dddddd;
-            color : #1f2327;
+            color: #1f2327;
             transition: .3s;
             text-decoration: none;
         }
+
         .main {
             top: 50px;
         }
+
         h1 {
             font-size: 30px;
             vertical-align: middle;
         }
+
         body {
             background-color: #0055b0;
-            color : #fff;
+            color: #fff;
         }
+
         .separator {
             margin-left: 0%;
         }
+
         .affA {
             margin: 5% 10%;
-            width : 80%;
+            width: 80%;
         }
+
         .phoneNav div {
             vertical-align: middle;
             margin-left: 5%;
@@ -500,7 +530,7 @@ drop {
 
 .uppasside {
     align-self: auto;
-    font-size : 1.8em;
+    font-size: 1.8em;
 
 }
 
