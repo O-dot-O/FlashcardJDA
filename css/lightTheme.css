@@ -1,35 +1,3 @@
-/* @font-face{
-    font-family: "Rubik";
-    src: url("/Rubik/Rubik-Black.ttf")format("truetype"),
-    url("/Rubik/Rubik-Light.ttf")format("truetype");
-    font-weight : normal;
-}
-@font-face {
-    font-family: "Rubik";
-    src : url("/Rubik/Rubik-Bold.ttf")format("truetype"),
-    url("/Rubik/Rubik-BoldItalic.ttf")format("truetype");
-    font-weight: bold;
-}
-@font-face {
-    font-family: "Rubik";
-    src : url("/Rubik/Rubik-Medium.ttf")format("truetype"),
-    url("/Rubik/Rubik-MediumItalic.ttf")format("truetype");
-    font-weight: medium ;
-}
-@font-face {
-    font-family: "Rubik";
-    src : url("/Rubik/Rubik-Regular.ttf")format("truetype");
-    font-weight: 400;
-} */
-/* url("/Rubik/Rubik-BlackItalic.ttf"),
-url("/Rubik/Rubik-Bold.ttf"),
-url("/Rubik/Rubik-BoldItalic.ttf"),
-url("/Rubik/Rubik-Italic.ttf"),
-url("/Rubik/Rubik-Light.ttf"),
-url("/Rubik/Rubik-LightItalic.ttf"),
-url("/Rubik/Rubik-Medium.ttf"),
-url("/Rubik/Rubik-MediumItalic.ttf"),
-url("/Rubik/Rubik-Regular.ttf"),; */
 * {
     box-sizing: border-box;
     scrollbar-color: #2e3236 #1f2327;
@@ -54,101 +22,29 @@ html {
 }
 
 body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #0055b0;
+background-color: #0055b0;
     color: #5b677d;
 }
 
 .main {
-    top: 0;
-    position: absolute;
-    height: 100%;
+
     background-color: #ffffff;
     color: #5b677d;
-    position: relative;
-    float: right;
-    z-index: 2;
+
 }
 
-/* right : 0;
-    color : #5b677d;
-    float: right;
-    position: absolute;
-    top : 0;
-    width: calc(100% - 295px)!important;
-    left : 295px !important;
-    background-color: #ffffff;
-    height: 100vh;
-    margin : 0;
-    padding : 0; */
-
 .flashCards {
-    margin: 4% 0px 22% 22%;
     background-color: #ffffff;
     border: 1px solid #dfdfdf;
     color: #343a40;
-    border-radius: 0%;
-    min-width: 63%;
-    min-height: 200px;
-    position: relative;
-    right: 13%;
-}
-
-.flashCards-content {
-    text-align: center;
-    padding: 25px;
-}
-
-.flashCards-text {
-    margin-top: 4%;
 }
 
 h2.uppasside::after {
-    content: "";
-    display: block;
     background-color: #007bff;
-    width: calc(65%);
-    min-width: 226px;
-    height: 2px;
 }
 
 .asside {
-    width: 22.00%;
-    min-width: 22.00%;
-    height: 100vh;
-    background-color: var(--bleu);
-    float: left;
-    padding: 37px;
     color: #ffffff;
-    /*
-    height: 100%;
-    position: absolute;
-    width: calc(100% - (100% - ));
-    max-width: 310px !important;
-    background-color: var(--bleu);
-    float: left;
-    
-    z-index: 1; */
-}
-
-.asside-header {
-    padding: 20px;
-    font-size: 1.65em;
-}
-
-.matierre {
-    list-style: none;
-    padding: 10px 25px;
-    font-size: 1.1em;
-}
-
-.matierre h2 {
-    margin: 0;
-    padding: 10px 25px;
 }
 
 .matierre h2 {
@@ -156,395 +52,32 @@ h2.uppasside::after {
 }
 
 .matierre a {
-    text-decoration: none;
     color: #ffffff;
-    opacity: .7;
-}
-
-.matierre a:hover {
-    opacity: 1;
-    transition: opacity 1s;
-}
-
-.categorie {
-    list-style: none;
-    padding: 10px 25px;
-    font-size: 1.1em;
 }
 
 .categorie a {
-    text-decoration: none;
     color: #fff;
-    opacity: .5;
 }
 
-.categorie a:hover {
-    opacity: 1;
-    transition: .3s;
-}
-
-.footer {
-    clear: both;
-}
-
-.row-counter {
-    padding: none;
-    margin: none;
-    margin-left: 17%;
-    padding-top: 20px;
-}
-
-.row-a {
-    padding: none;
-    margin: none;
-    margin-left: 0%;
-    padding-top: 20px;
-}
-
-.prev-btn,
-.next-btn {
-    transform: scale(1.5);
-}
-
-.flashCards-text {
-    cursor: -moz-grabbing;
-}
-
-.affA {
-    width: 70%;
-    margin-left: 12%;
-}
-
-
-/*---------------------------------*/
-.phoneNav {
-    display: none;
-}
-
-.navbarr {
-    display: grid;
-}
-
-drop {
-    min-height: 25px;
-    min-width: 25px;
-    height: auto;
-    width: auto;
-}
-
-.bug .txt {
-    padding: 0 0 -5px 0;
-    padding: 0;
-    font-size: 1.4rem;
+.txt {
     color: #fff;
-    cursor: pointer;
-    opacity: .9;
 }
 
-.bug2 .txt {
-    padding: 0;
-    padding: 0 0 5px 0;
-    font-size: 1.4rem;
-    color: #fff;
-    cursor: pointer;
-    opacity: .9;
+.navbarr .matierre{
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.navbarr .matierre,
+
 .navbarr .categorie {
     background-color: #0055b0;
 }
 
-.bug:hover,
-.bug2:hover {
-    opacity: 1;
-    transition: .3s;
-}
-
-.return {
-    float: right;
-    margin: 12.5px 0 0 0;
-}
-
-.text-success {
-    cursor: help;
-}
-
-.form .row {
-    padding: none;
-    margin: none;
-    padding-top: 20px;
-}
-
-#message {
-    text-size-adjust: vertical !important;
-    padding: 10px;
-    min-height: 100px !important;
-}
-
 .navbarr .categorie {
-    list-style: none;
     color: #fff;
 }
 
-.navbar {
-    display: none;
-}
-
-/*
-.menuicocontainer {
-    display: inline-block;
-    cursor: pointer;
-    z-index: 10;
-    vertical-align: middle;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: rgb(204, 204, 204);
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.changetoN .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.changetoN .bar2 {
-    opacity: 0;
-}
-
-.changetoN .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
-*/
-.phone-more {
-    display: none;
-}
-
-@media (max-width : 1422px) {
-    .main {
-        z-index: 0;
-        position: absolute;
-        width: 100%;
-        min-height: 100vh;
-        height: auto;
-        top: 150px;
-        left: 0;
-    }
-
-    .row-counter {
-        margin-left: 15%;
-    }
-
-    .row .row-counter {
-        margin: 0;
-        padding: 0;
-    }
-
-    .btn .btn-light .affA {
-        position: absolute;
-        float: right
-    }
-
-    .asside {
-        display: none;
-    }
-
-    .links a {
-        margin: 0 10px;
-        text-decoration: none;
-        color: #fff;
-        opacity: .8;
-    }
-
-    .links a:hover {
-        opacity: 1;
-        transition: .3s;
-    }
-
-    drop.bug,
-    drop.bug2 {
-        position: absolute;
-        visibility: visible;
-        top: 50px;
-        right: -200%;
-    }
-
-    ul.matierre1 {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 40px;
-        right: 0px;
-    }
-
-    ul.matierre2 {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 40px;
-        right: 0px;
-    }
-
-    ul.matierre drop.bug {
-        right: -145%;
-    }
-
-    .nav-link {
-        margin-left: 4%;
-    }
-
-    body {
-        background-color: #0055b0;
-        color: #fff;
-    }
-
-    .navbar {
-        width: 100%;
-        height: 150px;
-        display: inline-flex;
-        padding: 50px;
-    }
-
-    .btn {
-        margin: 5;
-    }
-
-    .affA {
-        margin-left: 12.5%;
-    }
-
-    .phone-more {
-        display: none;
-    }
-
-    @media (max-width: 780px) {
-        .main {
-            z-index: 1;
-        }
-
-        .navbar {
-            display: none;
-        }
-
-        .row-counter {
-            margin-left: 12%;
-            padding: 15px 15px 0 0;
-            display: flex;
-            flex-wrap: nowrap;
-        }
-
-        .row-counter .next-btn {
-            display: inline-block;
-        }
-
-        .phoneNav {
-            display: inline-flex;
-            width: 100%;
-            height: 50px;
-            left: 0;
-            top: 0;
-        }
-
-        .phone-more::before {
-            content: "";
-            display: block;
-            background-color: #1f2327;
-            width: calc(100%);
-            height: 1px;
-            opacity: .8;
-
-        }
-
-        .phone-more {
-            position: absolute;
-            display: block;
-            margin: 0;
-            padding: 0;
-            z-index: 50;
-            width: 100%;
-            height: 100vh;
-            background-color: #0055b0;
-        }
-
-        .phone-more li {
-            list-style: none;
-            padding: 10px 0;
-        }
-
-        .phone-more a {
-            color: white;
-            width: 100%;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-            display: block;
-        }
-
-        .phone-more a:hover {
-            background-color: #dddddd;
-            color: #1f2327;
-            transition: .3s;
-            text-decoration: none;
-        }
-
-        .main {
-            top: 50px;
-        }
-
-        h1 {
-            font-size: 30px;
-            vertical-align: middle;
-        }
-
-        body {
-            background-color: #0055b0;
-            color: #fff;
-        }
-
-        .separator {
-            margin-left: 0%;
-        }
-
-        .affA {
-            margin: 5% 10%;
-            width: 80%;
-        }
-
-        .phoneNav div {
-            vertical-align: middle;
-            margin-left: 5%;
-            margin-top: 1%;
-            margin-right: 5%;
-            display: inline-block;
-        }
-
-    }
-}
-
-.uppasside {
-    align-self: auto;
-    font-size: 1.8em;
-
-}
-
-.arrow-down::after {
-    content: "▾";
-    margin: 0px;
-    border: 0px;
-    font-weight: bolder;
-
-}
-
-.arrow-up::after {
-    content: "▴";
-    margin: 0px;
-    border: 0px;
-    font-weight: bolder;
+.affA {
+    color: #fff;
+    /*La règle de couleur de cette classe est dans le fichier
+      style.css pour des raisons de transition.*/
 }
