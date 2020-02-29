@@ -1,92 +1,76 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flash Cards - JDA</title>
-    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="darkThemeV2.css">
-    <script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
-    <script src="bootstrap-4.3.1-dist/js/jquery-3.3.1.min.js"></script>
-    <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
-</head>
+<?
+if(!empty($_POST['choice'])){
+    $choice = $_POST['choice'];
+    setcookie("check",$choice,time() + 365*24*3600);
+    header('Location: /body.php');
+    exit;
+}
+if(!empty($_COOKIE['check'])){
+  header('Location: /body.php');
+  exit;
+}
+require_once('menu.php');
+?>
+<div class="main">
+<div class="flashCards">
+  <div class="flashCards-content">
+    <h3 class="FCTitle">Bienvenue sur FlashCards JDA</h3>
+      <p>FlashCards JDA c'est un simple moyen de révision, utilisant des FlashCards , pour savoir ce que c'est et/ou même réviser nous vous invitons à accepter les cookies afin d'avoir accèes au site !</p>
+  </div>
+</div>
+</div>
+<!-- $name = "Nicolas";
+setcookie('Nom',$name,time() + 365*24*3600);
+if(!empty($_POST['NAME'])) {
+  $name = $_POST['NAME'];
+  setcookie("Nom",$name,time() + 365*24*3600);
+}
+if($_COOKIE['Nom'] == "Malya") {
+  echo("La plus jolie");
+}
+?> -->
+<style media="screen">
+* {box-sizing: border-box;}
+body {
+  margin : 0;
+  padding : 0;
+  font-family: 'Arial',sans-serif;
+}
+  .cookieCheck {
+    z-index : 1000;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    bottom : 0px;
+    height : auto;;
+    padding : 30px 5px;
+    width : 100%;
+    background-color: #71a3b8;
+  }
+  .cookieCheck span {
+    float: left;
+    font-size: 1.2em;
+    color : #dfdfdf;
+  }
+  form {
+    margin : 0;
+  }
+  .form {
+    padding : 0 50px;
+    position: absolute;
+    right : 0;
+  }
+</style>
+<?php if(empty($_COOKIE['check'])){ ?>
+  <div class="cookieCheck">
+    <span>Notre site utilise des cookie afin de pouvoir sauvegarder les themes que vous séléctionez !</span>
+<div class="form">
+  <form action="#" method="post">
+    <label for="choice">Accepter</label>
+    <input type="radio" name="choice" value="oui"/>
 
-<body>
-    <nav class="navbar">
-        <div class="links">
-            <h4 style="display: inline;position: relative;" href="index.html">FlashCards-JDA</h4>
-            <div style="margin : none; width : 40%;position: relative;left : 0px;"class="separator"></div>
-            <a href="liste.html">Liste</a>
-            <a href="mailto:nicolasgiannettini1@gmail.com">Contacte</a>
-            <a href="#">Plus</a>
-        </div>
-    </nav>
-    <asside class="asside container-fluid">
-        <h2>FlashCards-JDA</h2>
-                <div class="separator"></div>
-        <h2 class="asside-header">Catégorie</h2>
-        <form class="form-group"action="#" method="get">
-            <input type="text" placeholder="Entrer n° Carte voulue" class="numero form-control">
-        </form>
-        <ul class="matierre">
-            <div class="needed">
-                <drop class="bug">
-                <span class="bug txt">Brevet <span class="tUp">&blacktriangle;</span><span class="tDown">&blacktriangledown;</span></span>
-                <nav class="navbarr">
-
-                    <ul class="matierre matierre1">
-                        <li><a class="DropDown brevet math"href="#">Mathématique</a></li>
-                        <li><a class="DropDown brevet fran"href="#">Français</a></li>
-                        <li><a class="DropDown brevet angl"href="#">Anglais</a></li>
-                        <li><a class="DropDown brevet phys"href="#">Physique</a></li>
-                        <li><a class="DropDown brevet svt"href="#">S.V.T</a></li>
-                        <li><a class="DropDown brevet tech"href="#">Technologie</a></li>
-                        <li><a class="DropDown brevet hist"href="#">Histoire</a></li>
-                        <li><a class="DropDown brevet Geog"href="#">Géographie</a></li>
-                        <li><a class="DropDown brevet emc"href="#">EMC</a></li>
-                        <li><a class="DropDown brevet musi"href="#">Musique</a></li>
-                        <li><a class="DropDown brevet art"href="#">Art</a></li>
-                    </ul>
-                </nav>
-                </drop>
-              </div>
-
-              <div class="needed">
-                <drop class="bug2">
-                <span class="bug2 txt">Bac <span class="tUp2">&blacktriangle;</span><span class="tDown2">&blacktriangledown;</span></span></span>
-                <nav class="navbarr">
-
-                    <ul class="matierre matierre2">
-                        <li><a class="DropDown2 bac math"href="#">Mathématique</a></li>
-                        <li><a class="DropDown2 bac fran"href="#">Français</a></li>
-                        <li><a class="DropDown2 bac angl"href="#">Anglais</a></li>
-                        <li><a class="DropDown2 bac phys"href="#">Physique</a></li>
-                        <li><a class="DropDown2 bac svt"href="#">S.V.T</a></li>
-                        <li><a class="DropDown2 bac tech"href="#">Technologie</a></li>
-                        <li><a class="DropDown2 bac hist"href="#">Histoire</a></li>
-                        <li><a class="DropDown2 bac Geog"href="#">Géographie</a></li>
-                        <li><a class="DropDown2 bac emc"href="#">EMC</a></li>
-                        <li><a class="DropDown2 bac art"href="#">Art</a></li>
-                        <li><a class="DropDown2 bac espa"href="#">Espagnol</a></li>
-                        <li><a class="DropDown2 bac sport"href="#">Sport</a></li>
-                    </ul>
-                </nav>
-            </drop>
-              </div>
-        </ul>
-
-        <h2 class="asside-header">Autre</h2>
-        <ul class="matierre">
-            <li><a href="liste.php">Listes et Matière</a></li>
-            <li><a href="mailto:nicolasgiannettini1@gmail.com">Contactez nous</a></li>
-            <li><a href="#">Plus d'information</a></li>
-        </ul>
-
-        <h2 class="asside-header">Fondateur</h2>
-        <ul class="matierre">
-            <li><a href="#">Nicolas Giannettini</a></li>
-            <li><a href="#">Maxence Raynal</a></li>
-            
-        </ul>
-
-
-    </asside>
+    <input type="submit" class="btn btn-success" value="Envoyer"/>
+  </form>
+</div>
+</div>
+<?php }?>
