@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Flashcard JDA</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/svg" href="media/ODot Logo.svg">
+    <meta name="description" content="Un simple moyen de réviser !">
+    <meta name="author" content="O-dot*O">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/4ea6fff15a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,900|Rubik&display=swap" rel="stylesheet">     <!-- <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightTheme.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="links">
+            <h4 style="display: inline;position: relative;" href="index.html">FlashCards-JDA</h4>
+            <div style="margin : none; width : 40%;position: relative;left : 0px;" class="separator"></div>
+            <a href="">Contact</a>
+            <a href="themes.html">Thèmes</a>
+            <a href="#">Plus</a>
+        </div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle arrow-down btn btn-light" data-toggle="dropdown" href="#"
+                    role="button" aria-haspopup="true" aria-expanded="false">Bac </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Mathématiques</a>
+                    <a class="dropdown-item" href="#">Histoire</a>
+                    <a class="dropdown-item" href="#">Français</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle arrow-down btn btn-light" data-toggle="dropdown" href="#"
+                    role="button" aria-haspopup="true" aria-expanded="false">Brevet </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Mathématiques</a>
+                    <a class="dropdown-item" href="#">Histoire</a>
+                    <a class="dropdown-item" href="#">Français</a>
+                </div>
+            </li>
+
+        </ul>
+
+    </nav>
+    <asside class="asside container-fluid" style="min-height: 100vh;">
+        <h2 class="uppasside">FlashCards-JDA</h2>
+        <div class="separator uppasside"></div>
+        <h2 class="asside-header">Catégorie</h2>
+        <form class="form-inline" action="#" method="get">
+            <input type="number" placeholder="Numéro de carte" class="numero form-control mr-sm-2">
+        </form>
+        <ul class="matierre">
+            <div class="needed">
+                <drop class="bug">
+                    <span class="bug txt dropdown-btn arrow-down">Brevet </span>
+                    <nav class="navbarr">
+
+                        <ul class="matierre matierre1">
+                            <li><a class="DropDown brevet math" href="#">Mathématiques</a></li>
+                            <li><a class="DropDown brevet fran" href="#">Français</a></li>
+                            <li><a class="DropDown brevet angl" href="#">Anglais</a></li>
+                            <li><a class="DropDown brevet phys" href="#">Physique</a></li>
+                            <li><a class="DropDown brevet svt" href="#">S.V.T</a></li>
+                            <li><a class="DropDown brevet tech" href="#">Technologie</a></li>
+                            <li><a class="DropDown brevet hist" href="#">Histoire</a></li>
+                            <li><a class="DropDown brevet Geog" href="#">Géographie</a></li>
+                            <li><a class="DropDown brevet emc" href="#">EMC</a></li>
+                            <li><a class="DropDown brevet musi" href="#">Musique</a></li>
+                            <li><a class="DropDown brevet art" href="#">Art</a></li>
+                        </ul>
+                    </nav>
+                </drop>
+            </div>
+
+
+            <div class="needed">
+                <drop class="bug2">
+                    <span class="bug2 txt dropdown-btn arrow-down">Bac </span>
+                    <nav class="navbarr">
+
+                        <ul class="matierre matierre2">
+                            <li><a class="DropDown2 bac math" href="#">Mathématiques</a></li>
+                            <li><a class="DropDown2 bac fran" href="#">Français</a></li>
+                            <li><a class="DropDown2 bac angl" href="#">Anglais</a></li>
+                            <li><a class="DropDown2 bac phys" href="#">Physique</a></li>
+                            <li><a class="DropDown2 bac svt" href="#">S.V.T</a></li>
+                            <li><a class="DropDown2 bac tech" href="#">Technologie</a></li>
+                            <li><a class="DropDown2 bac hist" href="#">Histoire</a></li>
+                            <li><a class="DropDown2 bac Geog" href="#">Géographie</a></li>
+                            <li><a class="DropDown2 bac emc" href="#">EMC</a></li>
+                            <li><a class="DropDown2 bac art" href="#">Art</a></li>
+                            <li><a class="DropDown2 bac espa" href="#">Espagnol</a></li>
+                        </ul>
+                    </nav>
+                </drop>
+            </div>
+        </ul>
+
+        <h2 class="asside-header">Autre</h2>
+        <ul class="matierre">
+            <li><a data-toggle="modal" data-target="#leModal">Contactez nous</a>
+                <i style="margin : 4px;" class="fa fa-envelope" aria-hidden="true"></i>
+            </li>
+            <li><a href="#">Plus d'information</a><i style="margin : 2px" class="fa fa-info-circle"
+                    aria-hidden="true"></i></li>
+            <li><a href="themes.html">Thèmes</a><i style="margin: 4px;" class="fa fa-clipboard" aria-hidden="true"></i>
+            </li>
+        </ul>
+
+        <h2 class="asside-header">Fondateurs</h2>
+        <ul class="matierre">
+            <li><a href="#" rel="author">Nicolas Giannettini</a></li>
+            <li><a href="https://github.com/Boudial" rel="author">Maxence Raynal</a></li>
+
+        </ul>
+
+
+    </asside>
+    <nav class="phoneNav nav">
+        <div class="nav-item">
+            <h1>FlashCards-JDA</h1>
+
+        </div>
+        <div class="justify-content-end nav-item">
+            <a href="#" class="bars"><i style="position: absolute;right : 5px;font-size : 40px;color : #ffffff"
+                    class="fa fa-bars"></i></a>
+        </div>
+
+
+    </nav>
+    <div class="phone-more">
+        <div class="container-fluid">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Plus</a></li>
+                <li><a href="themes.html">Thème</a></li>
+                <li><button data-toggle="modal" data-target="#leModal">Contactez nous</button>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+        <!--VVV  CONTENU DE LA PAGE  VVV-->
+    <main class="main container-fluid" style="min-height: 100vh;">
+        <div class="row row-counter">
+            <p class="position"></p>
+            <div class="col-lg-4 col-md-4 col-xs-4">
+                <button type="button" id="prevBtn" class="prev-btn btn btn-light" rel="prev">
+                    &#60;
+                </button> 
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-4 txt_here text-dark">
+                <h1 class="nb-here"></h1>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-4">
+                <button type="button" id="nextBtn" style="position: absolute;display: block;" class="next-btn btn btn-light" rel="next">
+                    &#62;
+                </button>
+            </div>
+        </div>
+        <div class="flashCards div1">
+            <div class="flashCards-content">
+                <div class="flashCards-header">
+                    <h3 class="FCTitle"></h3>
+                </div>
+                <div class="flashCards-text">
+                    <p class="FCQuestion"></p>
+                </div>
+                <div class="ans">
+                    <p class="answer alert alert-primary FCAnswer"></p>
+                </div>
+                <div class="littleplus">
+                    <p class="FCNote"></p>
+                </div>
+            </div>
+        </div>
+        <div class="btnNext">
+            <button type="button" class="affA">
+                Afficher la réponse   <i class="fas fa-long-arrow-alt-right fa-lg"></i>
+            </button>
+        </div>
+
+
+    </main>
+    <div id="leModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Contact</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="modal-body">
+                    <p>Contactez nous via le serveur Discord disponible ci-dessous de préférence. Vous pouvez aussi nous
+                        contacter à cette adresse e-mail: mailto:nicolasgiannettini1@gmail.com .</p>
+                    <iframe src="https://discordapp.com/widget?id=675387452495495170&theme=dark" width="100%"
+                        height="500" allowtransparency="true" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/json/storagea.js"></script>
+</body>
+
+</html>
