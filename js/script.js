@@ -57,6 +57,11 @@ $(document).ready(function () {
   $(".menuicocontainer").click(function () {
     $(this).toggleClass("changetoN");
   });
+  if ($(".select option:selected").text() == "Oui") {
+    $('select').prop("disabled", false);
+  } else {
+    $('select').prop("disabled", true);
+  }
   /*
   $(".themeForm").submit(function() {
     var newUrl;

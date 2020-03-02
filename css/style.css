@@ -24,6 +24,7 @@ body {
     font-family: 'Raleway', 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .main {
@@ -36,12 +37,12 @@ body {
 
 .flashCards {
     margin: 4% 0px 22% 22%;
-
     border-radius: 10px;
     min-width: 63%;
     min-height: 200px;
     position: relative;
     right: 13%;
+    padding: 3%;
 }
 
 .flashCards-content {
@@ -51,6 +52,19 @@ body {
 
 .flashCards-text {
     margin-top: 4%;
+}
+
+.NFC {
+    min-width: 100%;
+    width : auto;
+    padding : 0 0 0 5px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+.NFC::after {
+    content:"";
+    display: block;
+    
 }
 
 .separator {
@@ -63,11 +77,12 @@ body {
 }
 
 .asside {
-    height: 100%;
+    min-height: 100vh;
+    height : auto;
     position: absolute;
     width: 295px;
     max-width: 295px !important;
-
+    overflow: visible;
     float: left;
     padding: 25px;
     z-index: 1;
@@ -171,6 +186,10 @@ body {
 /*---------------------------------*/
 .phoneNav {
     display: none;
+}
+
+h2 a {
+    font-size: larger;
 }
 
 .navbar {
@@ -373,6 +392,10 @@ drop {
     margin: 0px;
     border: 0px;
     font-weight: bolder;
+}
+
+.close {
+    font-family: Rubik, sans-serif;
 }
 
 .close:hover,

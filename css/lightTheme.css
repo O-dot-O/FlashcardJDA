@@ -22,7 +22,7 @@ html {
 }
 
 body {
-background-color: #0055b0;
+    background-color: #fff;
     color: #5b677d;
 }
 
@@ -45,6 +45,8 @@ h2.uppasside::after {
 
 .asside {
     color: #ffffff;
+    background-color: #0055B0;
+
 }
 
 .matierre h2 {
@@ -63,7 +65,7 @@ h2.uppasside::after {
     color: #fff;
 }
 
-.navbarr .matierre{
+.navbarr .matierre {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -80,4 +82,16 @@ h2.uppasside::after {
     color: #fff;
     /*La règle de couleur de cette classe est dans le fichier
       style.css pour des raisons de transition.*/
+}
+
+.NFC {
+    border: none;
+    border-bottom: 2px solid #aaa;
+    opacity: .7;
+    transition: .3s ease-in-out;
+}
+
+.NFC:focus {
+    border-bottom: 2px solid #0055b0;
+    opacity: 1;
 }
