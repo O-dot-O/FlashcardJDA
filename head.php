@@ -24,8 +24,15 @@
     </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:400,900|Rubik&display=swap" rel="stylesheet">     <!-- <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">  -->
-        <!--<link rel="stylesheet" href="css/bulma.css">-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,900|Rubik&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">  -->
+    <link rel="stylesheet" href="css/bulma.css">
     <link rel="stylesheet" href="css/style.css">
+    <?php if($_COOKIE['theme'] == "Light+theme") {?>
     <link rel="stylesheet" href="css/lightTheme.css">
+    <?php }elseif($_COOKIE['theme'] == "Dark+theme") {?>
+    <link rel="stylesheet" href="css/darkTheme.css">
+    <?php }else {?>
+    <link rel="stylesheet" href="css/lightTheme.css">
+    <?php }?>
 </head>

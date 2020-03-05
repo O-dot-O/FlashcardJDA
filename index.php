@@ -4,9 +4,9 @@ require_once("menu.php");
 ?>
 
 <body>
-        <!--VVV  CONTENU DE LA PAGE  VVV-->
-    <main class="main container-fluid" style="min-height: 100vh;">
-        <div class="row row-counter">
+    <!--VVV  CONTENU DE LA PAGE  VVV-->
+    <main class="main container-fluid">
+        <!--        <div class="row row-counter">
             <p class="position"></p>
             <div class="col-lg-4 col-md-4 col-xs-4">
                 <button type="button" id="prevBtn" class="prev-btn btn btn-light" rel="prev">
@@ -43,15 +43,15 @@ require_once("menu.php");
                 Afficher la réponse   <i class="fas fa-long-arrow-alt-right fa-lg"></i>
             </button>
         </div>
-
+-->
 
     </main>
     <?php 
 require_once("modal.php");
+require_once("end.php");
 ?>
-    
-    <script src="js/script.js"></script>
-    <script src="js/json/storagea.js"></script>
+
+
 </body>
 
 </html>

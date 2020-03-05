@@ -1,4 +1,4 @@
-<nav class="navbar">
+<!--<nav class="navbar">
     <div class="links">
 
         <h4 style="display: inline;position: relative;" href="index.php"><a href="index.php">Flashcard-JDA</a></h4>
@@ -30,10 +30,10 @@
     </ul>
 
 </nav>
-<asside class="asside container-fluid" style="min-height: 100vh;">
+<!--VVV PC VVV-->
+<!--<asside class="asside container-fluid" style="min-height: 100vh;">
     <h2 class="uppasside"><a href="index.php">Flashcard-JDA</a></h2>
     <div class="separator uppasside"></div>
-    <h2 class="asside-header">Catégorie</h2>
     <form class="form-inline" action="#" method="get">
         <input type="text" inputmode="numeric" pattern="[0-9]" placeholder="Numéro de carte"
             class="numero form-control mr-sm-2">
@@ -41,21 +41,17 @@
     <ul class="matierre">
         <div class="needed">
             <drop class="bug">
-                <span class="bug txt dropdown-btn arrow-down">Brevet </span>
+                <span class="bug txt dropdown-btn arrow-down">Classe </span>
                 <nav class="navbarr">
 
                     <ul class="matierre matierre1">
-                        <li><a class="DropDown brevet math" href="#">Mathématiques</a></li>
-                        <li><a class="DropDown brevet fran" href="#">Français</a></li>
-                        <li><a class="DropDown brevet angl" href="#">Anglais</a></li>
-                        <li><a class="DropDown brevet phys" href="#">Physique</a></li>
-                        <li><a class="DropDown brevet svt" href="#">S.V.T</a></li>
-                        <li><a class="DropDown brevet tech" href="#">Technologie</a></li>
-                        <li><a class="DropDown brevet hist" href="#">Histoire</a></li>
-                        <li><a class="DropDown brevet Geog" href="#">Géographie</a></li>
-                        <li><a class="DropDown brevet emc" href="#">EMC</a></li>
-                        <li><a class="DropDown brevet musi" href="#">Musique</a></li>
-                        <li><a class="DropDown brevet art" href="#">Art</a></li>
+                        <li><a class="DropDown 6e" href="#">6<span>ème</span></a></li>
+                        <li><a class="DropDown 5e" href="#">5<span>ème</span></a></li>
+                        <li><a class="DropDown 4e" href="#">4<span>ème</span></a></li>
+                        <li><a class="DropDown 3e" href="#">3<span>ème</span></a></li>
+                        <li><a class="DropDown 2d" href="#">2<span>nde</span></a></li>
+                        <li><a class="DropDown 1e" href="#">1<span>ère</span></a></li>
+                        <li><a class="DropDown Tl" href="#">T<span>le</span></a></li>
                     </ul>
                 </nav>
             </drop>
@@ -83,7 +79,7 @@
                 </nav>
             </drop>
         </div>
--->
+
     </ul>
 
     <h2 class="asside-header">Autre</h2>
@@ -98,18 +94,98 @@
         <li>
             <a href="NouvelleCarte.php">Ajouter une flashcard </a><i class="far fa-plus-square"></i>
         </li>
+        <li>
+            <a href="https://github.com/O-dot-O/FlashcardJDA" target="_blank">Notre Github </a><i class="fab fa-github"></i>
+        </li>
     </ul>
 
-    <h2 class="asside-header">Fondateurs</h2>
-    <ul class="matierre">
-        <li><a href="#" rel="author">Nicolas Giannettini</a></li>
-        <li><a href="https://github.com/Boudial" rel="author" target="_blank">Maxence Raynal</a></li>
+</asside>-->
+<section class="hero is-info is-medium">
+    <div class="hero-head">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="index.php">
+                        <h2 class="title is-2">FlashcardsJDA</h2>
+                    </a>
+                    <a role="button" class="navbar-burger burger" data-target="navbarMenuHeroA" aria-label="menu"
+                        aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="navbarMenuHeroA" class="navbar-menu">
+                    <div class="navbar-end">
+                        <span class="navbar-item">
+                            <div class="dropdown">
+                                <div class="dropdown-trigger">
+                                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                                        <span>Classe</span>
+                                        <span class="icon is-small">
+                                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                    <div class="dropdown-content">
+                                        <a href="#" class="dropdown-item">
+                                            6<span class="sup">ème</span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            5<span class="sup">ème</span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            4<span class="sup">ème</span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            3<span class="sup">ème</span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            2<span class="sup">de</span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            1<span class="sup">ère</span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            T<span class="sup">le</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                        <a class="navbar-item" href="https://www.jda-argentat.fr/contact/">
+                            Contact
+                        </a>
+                        <a class="navbar-item" href="NouvelleCarte.php">
+                            Ajouter une flashcard
+                        </a>
+                        <a class="navbar-item" href="themes.php">
+                            Thème
+                        </a>
+                        <a class="navbar-item" href="https://github.com/O-dot-O/FlashcardJDA">
+                            Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 
-    </ul>
-
-
-</asside>
-<nav class="phoneNav nav">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title">
+                Bienvenue
+            </h1>
+            <h2 class="subtitle">
+                Un simple moyen de réviser
+            </h2>
+        </div>
+    </div>
+    <div class="hero-foot">
+    </div>
+</section>
+<!--<nav class="phoneNav nav">
     <div class="nav-item">
         <h1><a href="index.php">Flashcard-JDA</a></h1>
 
@@ -118,6 +194,7 @@
         <a href="#" class="bars"><i style="position: absolute;right : 5px;font-size : 40px;color : #ffffff"
                 class="fa fa-bars"></i></a>
     </div>
+
 
 
 </nav>
@@ -133,3 +210,4 @@
         </ul>
     </div>
 </div>
+-->

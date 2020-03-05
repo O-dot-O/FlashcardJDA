@@ -66,9 +66,13 @@ h2.uppasside::after {
 }
 
 .navbarr .matierre {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
+.DropDown:hover {
+    background-color: #eee;
+    color: #0055b0;
+}
 
 .navbarr .categorie {
     background-color: #0055b0;

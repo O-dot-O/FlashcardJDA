@@ -78,4 +78,19 @@ $(document).ready(function () {
       modal.style.display = "none";
     }
   };
+  
+  $(".navbar-burger").click(function () {
+    $(".navbar-burger").toggleClass("is-active");
+    $(".navbar-menu").toggleClass("is-active");
+  });
+  $(".dropdown-trigger").click(function () {
+    $("dropdown-menu").toggleClass("is-active");
 });
+});
+
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  var expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
