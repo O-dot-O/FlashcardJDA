@@ -34,7 +34,7 @@ body {
 }
 
 .cookieCheck{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     padding: 15px;
     background-color: #eee;
@@ -50,4 +50,12 @@ body {
 .sup {
     font-size: small;
     bottom: 6px;
+}
+
+.boutonform{
+    opacity: .5;
+}
+
+.div1 {
+    margin: 2%;
 }

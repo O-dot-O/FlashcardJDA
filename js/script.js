@@ -57,11 +57,7 @@ $(document).ready(function () {
   $(".menuicocontainer").click(function () {
     $(this).toggleClass("changetoN");
   });
-  if ($(".select option:selected").text() == "Oui") {
-    $('select').prop("disabled", false);
-  } else {
-    $('select').prop("disabled", true);
-  }
+
   /*
   $(".themeForm").submit(function() {
     var newUrl;
@@ -83,9 +79,13 @@ $(document).ready(function () {
     $(".navbar-burger").toggleClass("is-active");
     $(".navbar-menu").toggleClass("is-active");
   });
-  $(".dropdown-trigger").click(function () {
-    $("dropdown-menu").toggleClass("is-active");
-});
+  $(".classes").click(function () {
+    $(".dropdown").toggleClass("is-active");
+  });
+
+  $(".classes").blur(function () {
+    $(".dropdown").removeClass("is-active");
+  });
 });
 
 function setCookie(cname, cvalue, exdays) {
