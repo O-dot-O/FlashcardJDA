@@ -178,7 +178,7 @@
                 Bienvenue
             </h1>
             <h2 class="subtitle">
-                Un simple moyen de réviser
+                FlashcardsJDA, c'est un simple moyen de réviser
             </h2>
         </div>
     </div>
