@@ -38,7 +38,7 @@ if($_SESSION['error'] != NULL) { ?>
         <button class="delete" aria-label="delete"onclick="$('.message').fadeOut();"></button>
     </div>
     <div class="message-body">
-    <i>Nous vous prions de ne pas rentrer de vocabulaire chartié ou discriminant au sein des Flashcards, et ainsi de respecter les utilisateurs et le staff</i>
+    <i>Pour le bien de tous les utilisateurs, veuillez ne rien écrire de déplacé dans vos flashcards. Merci.</i>
     </div>
 </article>
 
@@ -65,6 +65,7 @@ if($_SESSION['error'] != NULL) { ?>
             <option value="Histoire">Histoire</option>
             <option value="Géographie">Géographie</option>
             <option value="EMC">EMC</option>
+            <option value="SES">SES</option>
         </select>
         </div>
     </div>

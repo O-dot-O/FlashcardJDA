@@ -42,14 +42,14 @@ $card = json_decode($card, true);
         <div class="from"><?php echo$card[0]['name']; ?></div>
         </div>
     </div>
-
+<!--
     <article class="message is-info mt-5">
     <div class="message-header">
         <p>Information</p>
         <button class="delete" aria-label="delete"onclick="$('.message').fadeOut();"></button>
     </div>
 </article>
-
+-->
 </div>
 <style>
 .nextToBorderRight {

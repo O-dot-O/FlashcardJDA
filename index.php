@@ -12,10 +12,10 @@ require_once("menu.php");
             <div class="titleOfAnnonce">Informations</div>
         </div>
         <div class="card-content">
-        <div class="messageOfAdmin">Le site n'est qu'en Béta donc soyez indulgents s'il vous plait !</div>
+        <div class="messageOfAdmin">Le site n'en est qu'à l'une de ses premières versions.</div>
         </div>
         <div class="card-footer">
-        <div class="from">L'équipe de développement</div>
+        <div class="from">Nicolas Giannettini</div>
         </div>
     </div>
 </div>
