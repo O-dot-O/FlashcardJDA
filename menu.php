@@ -108,7 +108,7 @@
                     <a class="navbar-item" href="index.php">
                         <h2 class="title is-2">FlashcardsJDA</h2>
                     </a>
-                    <a role="button" class="navbar-burger burger" data-target="navbarMenuHeroA" aria-label="menu"
+                    <a role="button" class="navbar-burger burger ml-3 float-right" style="z-index : 20;" data-target="navbarMenuHeroA" aria-label="menu"
                         aria-expanded="false">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
@@ -117,10 +117,10 @@
                 </div>
                 <div id="navbarMenuHeroA" class="navbar-menu">
                     <div class="navbar-end">
-                        <span class="navbar-item">
+                        <!-- Désactiver car il ne fonctionne pas <span class="navbar-item"> 
                             <div class="dropdown">
                                 <div class="dropdown-trigger">
-                                    <button class="button classes" aria-haspopup="true" aria-controls="dropdown-menu">
+                                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                                         <span>Classe</span>
                                         <span class="icon is-small">
                                             <i class="fas fa-angle-down" aria-hidden="true"></i>
@@ -153,16 +153,21 @@
                                     </div>
                                 </div>
                             </div>
-                        </span>
+                        </span> -->
                         <a class="navbar-item" href="https://www.jda-argentat.fr/contact/">
                             Contact
                         </a>
                         <a class="navbar-item" href="NouvelleCarte.php">
                             Ajouter une flashcard
                         </a>
-                        <a class="navbar-item" href="themes.php">
-                            Thème
+                        <a class="navbar-item" href="reviser.php">
+                            Réviser
                         </a>
+                        <?php if($_COOKIE['admin'] == 'poulet') :?>
+                        <a class="navbar-item" href="panel.php">
+                            Gérer
+                        </a>
+                        <?php endif; ?>
                         <a class="navbar-item" href="https://github.com/O-dot-O/FlashcardJDA">
                             Github
                         </a>
@@ -171,19 +176,20 @@
             </div>
         </nav>
     </div>
-
+    
     <div class="hero-body">
         <div class="container has-text-centered">
             <h1 class="title">
-                Bienvenue
+                Bienvenue nous représentons
             </h1>
             <h2 class="subtitle">
-                FlashcardsJDA, c'est un simple moyen de réviser
+                Un moyen simple de réviser
             </h2>
         </div>
     </div>
     <div class="hero-foot">
     </div>
+
 </section>
 <!--<nav class="phoneNav nav">
     <div class="nav-item">

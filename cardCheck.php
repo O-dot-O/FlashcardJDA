@@ -1,25 +1,46 @@
 <?php
  session_start();
- $_SESSION['error'] = NULL;
  $_SESSION['success'] = NULL;
+ $canAccessToJSON = false;
  $error = NULL;
  if(!empty($_POST['name']) && !empty($_POST['title']) && !empty($_POST['question']) && !empty($_POST['answer'])) {
-     $my_File = fopen('js/json/cards.json','r+');//on ouvre le fichier cards.json 
- $nombre = 0;
- $char;
- while($char != ']') {
-$char = fgetc($my_File);
-     $nombre++;
- }
- fseek($my_File,$nombre-1);
- fputs($my_File,',{"name" : " '.$_POST['name'].'","title" : "'.$_POST['title'].'","question" : "'.$_POST['question'].'","answer" : "'.$_POST['answer'].'","Note" : "'.$_POST['note'].'"}');
- fputs($my_File,"]");
- fclose($my_File);//on ferme le fichier contenu dans $my_File en occurence cards.json
- $nombre = 0;
- $char = '';
-$_SESSION['success'] = 1;
-header("Location: /NouvelleCarte.php");
-}else {
-     $_SESSION['error'] = "Un ou plusieur champ obligatoire n'ont pas été rempli !\nPour supprimer cette alerte , merci de réactualiser votre page !";
-     header('Location: /NouvelleCarte.php');
- }
+    $card = array();
+    
+    $card['name'] = $_POST['name'];
+    $card['title'] = $_POST['title'];
+    $card['question'] = $_POST['question'];
+    $card['answer'] = $_POST['answer'];
+    $card['note'] = $_POST['note'];
+    $card['date'] = date("d/m/Y H:i");
+    $card['id'] = date("dmYHis");
+
+    $js = file_get_contents('js/json/cards.json');
+
+    $js = json_decode($js, true);
+
+    $js[] = $card;
+
+    $js = json_encode($js); 
+
+    file_put_contents('js/json/cards.json', $js);
+
+    $_SESSION['success'] = "Votre carte a bien été ajoutée !";
+
+
+    header("location: /reviser.php");
+}elseif(isset($_GET['del'])) {//supprime la carte
+    $card = file_get_contents('js/json/cards.json');
+    $card = json_decode($card, true);
+
+    $verifier = array();
+
+    for($i = 0;$i < count($card);$i++) {
+        if($card[$i]['id'] != $_GET['del']) {
+            $verifier[] =  $card[$i];
+        }
+    }
+    $verifier = json_encode($verifier) ;
+    file_put_contents('js/json/cards.json', $verifier);
+
+    header("location: ./");
+}

@@ -35,6 +35,7 @@ body {
 
 .flashCards {
     background-color: #ffffff;
+    border: 1px solid #dfdfdf;
     color: #343a40;
 }
 

@@ -1,0 +1,1 @@
+<script src="hideHeroBody.js"></script>

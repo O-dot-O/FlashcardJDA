@@ -1,68 +1,23 @@
 var modal = document.getElementById("theModal");
-var title = document.querySelector(".FCTitle");
-var question = document.querySelector(".FCQuestion");
-var answer = document.querySelector(".FCAnswer");
-var note = document.querySelector(".FCNote");
-load();
-
-function load() {
-  var requestURL = "cards.json";
-  var request = new XMLHttpRequest();
-  request.open("GET", requestURL);
-  request.responseType = "json";
-  request.send();
-  request.onload = function () {
-    var loed = request.response;
-    LoadCard(loed);
-  };
-
-  function LoadCard(jsonObj) {
-    $(title).text(jsonObj[cardNumber].title);
-    $(question).text(jsonObj[cardNumber].question);
-    $(answer).text(jsonObj[cardNumber].answer);
-    $(note).text(jsonObj[cardNumber].Note);
-  }
-}
-
 var cardNumber = 0;
 $(document).ready(function () {
   $(".nb-here").text(cardNumber);
-  $(".dropdown-btn")
-    .next()
-    .hide();
-  $(".dropdown-btn").click(function () {
-    $(this)
-      .next()
-      .toggle(500);
-    $(this).toggleClass("arrow-down");
-    $(this).toggleClass("arrow-up");
-  });
   $(".prev-btn").click(function () {
     cardNumber--;
     if (cardNumber < 0) {
       cardNumber = 0;
     }
     $(".nb-here").text(cardNumber);
-    LoadCard(cardNumber);
+    load();
   });
   $(".next-btn").click(function () {
     cardNumber++;
     $(".nb-here").text(cardNumber);
-    LoadCard(cardNumber);
-  });
-  $(".dropdown-toggle").click(function () {
-    $(this).toggleClass("arrow-down");
-    $(this).toggleClass("arrow-up");
+    load();
   });
   $(".menuicocontainer").click(function () {
     $(this).toggleClass("changetoN");
   });
-
-  /*
-  $(".themeForm").submit(function() {
-    var newUrl;
-    $(".themeLoc").attr("href", newUrl);
-  });*/
   $(".modalbtn").click(function () {
     modal.style.display = "block";
   });
@@ -79,15 +34,21 @@ $(document).ready(function () {
     $(".navbar-burger").toggleClass("is-active");
     $(".navbar-menu").toggleClass("is-active");
   });
-  $(".classes").click(function () {
+  $(".dropdown-trigger").click(function () {
     $(".dropdown").toggleClass("is-active");
-  });
-
-  $(".classes").blur(function () {
-    $(".dropdown").removeClass("is-active");
-  });
+});
+  $('.searcher').click(search);
 });
 
+function search() {
+  if($('.search') != cardNumber && $('.search').val() != '') {
+    str = parseInt($('.search').val());
+    cardNumber = str;
+    $('.search').val('');
+    $(".nb-here").text(cardNumber);
+    load();
+  }
+}
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));

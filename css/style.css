@@ -30,7 +30,6 @@ body {
         sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 .cookieCheck{
@@ -40,8 +39,8 @@ body {
     background-color: #eee;
     border-top: solid 1px #555;
     width: 100%;
+    z-index : 10;
 }
-
 .cookieCheck input {
     position: relative;
     float: right;
@@ -50,12 +49,4 @@ body {
 .sup {
     font-size: small;
     bottom: 6px;
-}
-
-.boutonform{
-    opacity: .5;
-}
-
-.div1 {
-    margin: 2%;
 }

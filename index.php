@@ -4,54 +4,77 @@ require_once("menu.php");
 ?>
 
 <body>
-    <!--VVV  CONTENU DE LA PAGE  VVV-->
-    <main class="main container-fluid">
-        <!--        <div class="row row-counter">
-            <p class="position"></p>
-            <div class="col-lg-4 col-md-4 col-xs-4">
-                <button type="button" id="prevBtn" class="prev-btn btn btn-light" rel="prev">
-                    &#60;
-                </button> 
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 txt_here text-dark">
-                <h1 class="nb-here"></h1>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-4">
-                <button type="button" id="nextBtn" style="position: absolute;display: block;" class="next-btn btn btn-light" rel="next">
-                    &#62;
-                </button>
-            </div>
-        </div>
-        <div class="flashCards div1">
-            <div class="flashCards-content">
-                <div class="flashCards-header">
-                    <h3 class="FCTitle"></h3>
-                </div>
-                <div class="flashCards-text">
-                    <p class="FCQuestion"></p>
-                </div>
-                <div class="ans">
-                    <p class="answer alert alert-primary FCAnswer"></p>
-                </div>
-                <div class="littleplus">
-                    <p class="FCNote"></p>
-                </div>
-            </div>
-        </div>
-        <div class="btnNext">
-            <button type="button" class="affA">
-                Afficher la réponse   <i class="fas fa-long-arrow-alt-right fa-lg"></i>
-            </button>
-        </div>
--->
 
-    </main>
-    <?php 
-require_once("modal.php");
-require_once("end.php");
+
+<div class="container">
+    <div class="card mt-5">
+        <div class="card-header">
+            <div class="titleOfAnnonce">Informations</div>
+        </div>
+        <div class="card-content">
+        <div class="messageOfAdmin">Le site n'est qu'en Béta donc soyez indulgents s'il vous plait !</div>
+        </div>
+        <div class="card-footer">
+        <div class="from">L'équipe de développement</div>
+        </div>
+    </div>
+</div>
+<?php if($_COOKIE['admin'] == 'poulet') :?>
+<?php $card = file_get_contents('js/json/cards.json');
+    $card = json_decode($card , true);
+
+    for($i = 0;$i <count($card);$i++) :
 ?>
+    <div class="mt-5 card">
+        <div class="card-header">
+        <p class="FCTitle"><?php echo$card[$i]['title']; ?></p>
+<a class="delete" href="cardCheck.php?del=<?php echo$card[$i]['id'];?>" name="del" aria-label="delete"></a>
+        
+        <style>
+        .delete {
+            position : absolute;
+            right : 5px;
+        }
+        </style>
+        </div>
+        <div class="card-body">
+        <p class="FCQuestion"><?php echo$card[$i]['question']; ?></p>
+        <p class="FCAnswer"><?php echo$card[$i]['answer']; ?></p>
+        <p class="FCNote"><?php echo$card[$i]['note']; ?></p>
+        </div>
+        <div class="card-footer">
+        <div class="from"><?php echo$card[$i]['name']; ?></div>
+        <div class="time"><?php echo$card[$i]['date']; ?></div>
+        </div>
+    </div>
 
-
+    <?php endfor; ?>
+    <?php endif;?>
+<style>
+.subject::after {
+    content : "";
+    display : block;
+    width : 100%;
+    height : 1px;
+    background-color : #dfdfdf;
+    margin : 5px 0;
+}
+.from {
+    float : left;
+}
+.from::before {
+    content : "De : "
+}
+.time {
+    position : absolute;
+    right : 10px;
+}
+.time::before {
+    content : "Le : "
+}
+</style>
+<?php require_once("end.php");?>
+<script src="js/json/annonce.js"></script>
 </body>
 
 </html>
