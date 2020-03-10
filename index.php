@@ -75,6 +75,7 @@ require_once("menu.php");
 </style>
 <?php require_once("end.php");?>
 <script src="js/json/annonce.js"></script>
+<h2>Wola le site il est pas fini</h2>
 </body>
 
 </html>

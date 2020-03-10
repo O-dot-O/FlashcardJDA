@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="index.php">
-                        <h2 class="title is-2">FlashcardsJDA</h2>
+                        <h3 class="title is-2">FlashcardsJDA</h3>
                     </a>
                     <a role="button" class="navbar-burger burger ml-3 float-right" style="z-index : 20;" data-target="navbarMenuHeroA" aria-label="menu"
                         aria-expanded="false">
@@ -16,7 +16,7 @@
                 </div>
                 <div id="navbarMenuHeroA" class="navbar-menu">
                     <div class="navbar-end">
-                        <!-- Désactiver car il ne fonctionne pas <span class="navbar-item"> 
+                        <!-- Désactiver car il n'est pas utile <span class="navbar-item"> 
                             <div class="dropdown">
                                 <div class="dropdown-trigger">
                                     <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
@@ -67,7 +67,7 @@
                             Gérer
                         </a>
                         <?php endif; ?>
-                        <a class="navbar-item" href="https://github.com/O-dot-O/FlashcardJDA">
+                        <a class="navbar-item" target="_blank"  href="https://github.com/O-dot-O/FlashcardJDA">
                             Github
                         </a>
                     </div>
@@ -82,11 +82,12 @@
                 Bienvenue
             </h1>
             <h2 class="subtitle">
-                FlashcardsJDA, un simple moyen de réviser
+                FlashcardsJDA, un moyen simple de réviser
             </h2>
         </div>
     </div>
     <div class="hero-foot">
+
     </div>
 
 </section>

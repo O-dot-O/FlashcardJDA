@@ -50,3 +50,62 @@ body {
     font-size: small;
     bottom: 6px;
 }
+
+
+.nextToBorderRight {
+    position : absolute;
+    right : 10px;
+    top : 5px;
+    padding : 0 10px;
+}
+
+.rightSideBorder {
+    position : absolute;
+    right : 20px;
+    top : -0.5rem;
+    font-size : 2rem;
+    font-weight : bold;
+}
+.from {
+    float : left;
+}
+.from::before {
+    content : "De : "
+}
+.time {
+    position : absolute;
+    right : 10px;
+}
+.time::before {
+    content : "Le : "
+}
+
+.nextToForm {
+    position : absolute;
+    top : 0rem;
+    left : 52%;
+    vertical-align: center;
+}
+
+.FCAnswer {
+    font-size: larger;
+    border-left: 3px solid #48C774;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.FCQuestion {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.FCNote {
+    font-size: large;
+    border-left: 3px solid #555;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.input .number {
+    min-width: 170px !important;
+}
