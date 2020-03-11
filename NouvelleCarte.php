@@ -34,7 +34,7 @@ if($_SESSION['error'] != NULL) { ?>
 
 <article class="message is-info mt-5">
     <div class="message-header">
-        <p>Demande</p>
+        <p>Information</p>
         <button class="delete" aria-label="delete"onclick="$('.message').fadeOut();"></button>
     </div>
     <div class="message-body">

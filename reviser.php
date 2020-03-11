@@ -25,8 +25,9 @@ $card = json_decode($card, true);
         <div class="card-header">
             <p class="FCTitle"><?php echo$card[0]['title']; ?></p>
             <div class="nextToBorderRight">
-                <button class="button prev-btn"><i class="fa fa-arrow-alt-circle-left"></i></button>
-                <button class="button next-btn"><i class="fa fa-arrow-alt-circle-right"></i></button>
+                <span class="vtag tag is-success is-vcentered">Vérifié</span>
+                <button class="button prev-btn" onclick="lodcarde()"><i class="fa fa-arrow-alt-circle-left"></i></button>
+                <button class="button next-btn" onclick="lodcarde()"><i class="fa fa-arrow-alt-circle-right"></i></button>
             </div>
         </div>
         <div class="card-body">

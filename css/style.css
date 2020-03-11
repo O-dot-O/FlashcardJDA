@@ -150,3 +150,8 @@ footer .is-vcentered {
 .footer-link:hover {
     color: #3273dc;
 }
+
+.vtag {
+    vertical-align: middle;
+    margin-top: 10px;
+}

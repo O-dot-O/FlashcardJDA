@@ -13,6 +13,10 @@
     $card['note'] = $_POST['note'];
     $card['date'] = date("d/m/Y H:i");
     $card['id'] = date("dmYHis");
+    $card['is-adminchecked'] = false;
+    if($_COOKIE['admin'] == 'poulet') :
+        $card['is-adminchecked'] = true;
+    endif;
 
     $js = file_get_contents('js/json/cards.json');
 

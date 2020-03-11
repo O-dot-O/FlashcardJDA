@@ -1,6 +1,7 @@
 var cardNumber = 0;
 $(".FCAnswer").hide();
 $(document).ready(function() {
+  lodcarde();
   $(".nb-here").text(cardNumber);
   $(".prev-btn").click(function() {
     cardNumber--;
@@ -55,4 +56,16 @@ function setCookie(cname, cvalue, exdays) {
   d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
   var expires = "expires=" + d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function lodcarde() {
+  if (isadminchecked) {
+    $(".vtag").text("Vérifié");
+    $(".vtag").addClass("is-success");
+    $(".vtag").removeClass("is-light");
+  } else {
+    $(".vtag").text("Non vérifié");
+    $(".vtag").addClass("is-light");
+    $(".vtag").removeClass("is-success");
+  }
 }

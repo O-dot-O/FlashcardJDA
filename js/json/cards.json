@@ -4,6 +4,7 @@
   "question": "Ici vous avez une question d'affich\u00e9e.",
   "answer": "Ici vous avez une r\u00e9ponse d'affich\u00e9e.",
   "note": "Ici vous avez une note d'affich\u00e9e.",
-  "date": "09/03/2020 17:13",
-  "id": "09032020171318"
+  "date": "09\/03\/2020 17:13",
+  "id": "09032020171318",
+  "is-adminchecked": true
 }]
