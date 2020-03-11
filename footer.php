@@ -17,5 +17,8 @@
                 <p>
                     <a class="footer-link" href="https://github.com/O-dot-O/FlashcardJDA/issues/new">Signaler un bug</a>
                 </p>
+                <p>
+                    <a class="footer-link">Version 0.2.2</a>
+                </p>
     </div>
 </footer>
