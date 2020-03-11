@@ -54,5 +54,6 @@ $card = json_decode($card, true);
 </article>
 -->
 </div>
-<?php require_once("V0.1.php");//cache le corp du hero !
+<?php require_once("footer.php");
+require_once("V0.1.php");//cache le corp du hero !
 require_once('end.php');?>

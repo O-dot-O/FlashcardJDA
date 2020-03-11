@@ -32,6 +32,20 @@ body {
     padding: 0;
 }
 
+footer {
+    margin: 0;
+    margin-top: 10vh !important;
+}
+
+footer div ul li {
+    font-size: small;
+    opacity: .7;
+}
+
+footer .is-vcentered {
+    margin: 0 10vw;
+}
+
 .cookieCheck{
     position: fixed;
     bottom: 0;
@@ -108,4 +122,31 @@ body {
 
 .input .number {
     min-width: 170px !important;
+}
+
+.footer-title {
+    color: #363636;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.footer-link-title {
+    color: #363636;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: color .7s ease-out;
+}
+
+.footer-link-title:hover {
+    color: #3273dc;
+}
+
+.footer-link {
+    color: #363636;
+    font-size: initial;
+    transition: color 0.7s ease-out;
+}
+
+.footer-link:hover {
+    color: #3273dc;
 }

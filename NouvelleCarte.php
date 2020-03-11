@@ -113,3 +113,6 @@ if($_SESSION['error'] != NULL) { ?>
         }
     })
 </script>
+<?php
+require_once("footer.php");
+?>

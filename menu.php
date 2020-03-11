@@ -67,9 +67,7 @@
                             Gérer
                         </a>
                         <?php endif; ?>
-                        <a class="navbar-item" target="_blank"  href="https://github.com/O-dot-O/FlashcardJDA">
-                            Github
-                        </a>
+
                     </div>
                 </div>
             </div>
@@ -91,29 +89,3 @@
     </div>
 
 </section>
-<!--<nav class="phoneNav nav">
-    <div class="nav-item">
-        <h1><a href="index.php">Flashcard-JDA</a></h1>
-
-    </div>
-    <div class="justify-content-end nav-item">
-        <a href="#" class="bars"><i style="position: absolute;right : 5px;font-size : 40px;color : #ffffff"
-                class="fa fa-bars"></i></a>
-    </div>
-
-
-
-</nav>
-<div class="phone-more">
-    <div class="container-fluid">
-        <ul>
-            <li><a href="index.php">Accueil</a></li>
-            <li><a href="#">Plus</a></li>
-            <li><a href="themes.php">Thème</a></li>
-            <li><button data-toggle="modal" data-target="#leModal">Contactez nous</button>
-
-            </li>
-        </ul>
-    </div>
-</div>
--->

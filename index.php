@@ -73,9 +73,9 @@ require_once("menu.php");
     content : "Le : "
 }
 </style>
-<?php require_once("end.php");?>
+<?php require_once("footer.php");
+require_once('end.php');?>
 <script src="js/json/annonce.js"></script>
-<h2>Wola le site il est pas fini</h2>
 </body>
 
 </html>
