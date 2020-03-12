@@ -26,7 +26,7 @@ require_once("menu.php");
     for($i = 0;$i <count($card);$i++) :
 ?>
     <div class="mt-5 card">
-        <div class="card-header">
+        <div class="card-content">
         <p class="FCTitle"><?php echo$card[$i]['title']; ?></p>
 <a class="delete" href="cardCheck.php?del=<?php echo$card[$i]['id'];?>" name="del" aria-label="delete"></a>
         
@@ -58,19 +58,6 @@ require_once("menu.php");
     height : 1px;
     background-color : #dfdfdf;
     margin : 5px 0;
-}
-.from {
-    float : left;
-}
-.from::before {
-    content : "De : "
-}
-.time {
-    position : absolute;
-    right : 10px;
-}
-.time::before {
-    content : "Le : "
 }
 </style>
 <?php require_once("footer.php");
