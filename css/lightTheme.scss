@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bleu: #3954ca;
+}
+
+::-webkit-scrollbar-track {
+    background: #1f2327;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2e3236;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #fff;
+    color: #5b677d;
+}
+
+.main {
+
+    background-color: #ffffff;
+    color: #5b677d;
+
+}
+
+.flashCards {
+    background-color: #ffffff;
+    border: 1px solid #dfdfdf;
+    color: #343a40;
+}
+
+h2.uppasside::after {
+    background-color: #007bff;
+}
+
+.asside {
+    color: #ffffff;
+    background-color: #0055B0;
+
+}
+
+.matierre h2 {
+    text-decoration: #000000 solid 2px;
+}
+
+.matierre a {
+    color: #ffffff;
+}
+
+.categorie a {
+    color: #fff;
+}
+
+.txt {
+    color: #fff;
+}
+
+.navbarr .matierre {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.DropDown:hover {
+    background-color: #eee;
+    color: #0055b0;
+}
+
+.navbarr .categorie {
+    background-color: #0055b0;
+}
+
+.navbarr .categorie {
+    color: #fff;
+}
+
+.affA {
+    color: #fff;
+    /*La règle de couleur de cette classe est dans le fichier
+      style.css pour des raisons de transition.*/
+}
+
+.NFC {
+    border: none;
+    border-bottom: 2px solid #aaa;
+    opacity: .7;
+    transition: .3s ease-in-out;
+}
+
+.NFC:focus {
+    border-bottom: 2px solid #0055b0;
+    opacity: 1;
+}

@@ -1,101 +1,101 @@
+@charset "UTF-8";
 * {
-    box-sizing: border-box;
-    scrollbar-color: #2e3236 #1f2327;
-    -webkit-scrollbar-color: #2e3236 #1f2327;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 :root {
-    --bleu: #3954ca;
+  --bleu: #3954ca;
 }
 
 ::-webkit-scrollbar-track {
-    background: #1f2327;
+  background: #1f2327;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #2e3236;
+  background: #2e3236;
 }
 
 html {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-    background-color: #fff;
-    color: #5b677d;
+  background-color: #fff;
+  color: #5b677d;
 }
 
 .main {
-
-    background-color: #ffffff;
-    color: #5b677d;
-
+  background-color: #ffffff;
+  color: #5b677d;
 }
 
 .flashCards {
-    background-color: #ffffff;
-    border: 1px solid #dfdfdf;
-    color: #343a40;
+  background-color: #ffffff;
+  border: 1px solid #dfdfdf;
+  color: #343a40;
 }
 
 h2.uppasside::after {
-    background-color: #007bff;
+  background-color: #007bff;
 }
 
 .asside {
-    color: #ffffff;
-    background-color: #0055B0;
-
+  color: #ffffff;
+  background-color: #0055B0;
 }
 
 .matierre h2 {
-    text-decoration: #000000 solid 2px;
+  -webkit-text-decoration: #000000 solid 2px;
+          text-decoration: #000000 solid 2px;
 }
 
 .matierre a {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .categorie a {
-    color: #fff;
+  color: #fff;
 }
 
 .txt {
-    color: #fff;
+  color: #fff;
 }
 
 .navbarr .matierre {
-    background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .DropDown:hover {
-    background-color: #eee;
-    color: #0055b0;
+  background-color: #eee;
+  color: #0055b0;
 }
 
 .navbarr .categorie {
-    background-color: #0055b0;
+  background-color: #0055b0;
 }
 
 .navbarr .categorie {
-    color: #fff;
+  color: #fff;
 }
 
 .affA {
-    color: #fff;
-    /*La règle de couleur de cette classe est dans le fichier
+  color: #fff;
+  /*La règle de couleur de cette classe est dans le fichier
       style.css pour des raisons de transition.*/
 }
 
 .NFC {
-    border: none;
-    border-bottom: 2px solid #aaa;
-    opacity: .7;
-    transition: .3s ease-in-out;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  opacity: .7;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .NFC:focus {
-    border-bottom: 2px solid #0055b0;
-    opacity: 1;
+  border-bottom: 2px solid #0055b0;
+  opacity: 1;
 }
+/*# sourceMappingURL=lightTheme.css.map */

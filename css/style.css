@@ -1,166 +1,169 @@
 * {
-    box-sizing: border-box;
-}
-
-h2 a {
-    color: inherit;
-    text-decoration: none;
-    font-size: 1rem !important;
-}
-
-a {
-    transition: 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-}
-
-a:hover {
-    cursor: pointer;
-    text-decoration: none;
-}
-
-h2 a:hover {
-    color: inherit;
-    text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-    font-family: BlinkMacSystemFont,
-        -apple-system,
-        'Segoe UI',
-        'Raleway',
-        'Rubik',
-        sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Raleway', 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  -webkit-transition: 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a h2 {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1rem !important;
+}
+
+a h2:hover {
+  color: inherit;
+  text-decoration: none;
 }
 
 footer {
-    margin: 0;
-    margin-top: 10vh !important;
-    margin-right: 0 !important;
+  margin: 0;
+  margin-top: 10vh !important;
+  margin-right: 0 !important;
 }
 
 footer div ul li {
-    font-size: small;
-    opacity: .7;
+  font-size: small;
+  opacity: .7;
 }
 
 footer .is-vcentered {
-    margin: 0 10vw;
+  margin: 0 10vw;
 }
 
-@media only screen and (min-width:768px) {
-    footer {
-        margin-top: 30vh !important;
-        
-    }
+@media only screen and (min-width: 768px) {
+  footer {
+    margin-top: 30vh !important;
+  }
 }
 
-.cookieCheck{
-    position: fixed;
-    bottom: 0;
-    padding: 15px;
-    background-color: #eee;
-    border-top: solid 1px #555;
-    width: 100%;
-    z-index : 10;
+.cookieCheck {
+  position: fixed;
+  bottom: 0;
+  padding: 15px;
+  background-color: #eee;
+  border-top: solid 1px #555;
+  width: 100%;
+  z-index: 10;
 }
+
 .cookieCheck input {
-    position: relative;
-    float: right;
+  position: relative;
+  float: right;
 }
 
 .sup {
-    font-size: small;
-    bottom: 6px;
+  font-size: small;
+  bottom: 6px;
 }
 
-
 .nextToBorderRight {
-    position : absolute;
-    right : 10px;
-    top : 5px;
-    padding : 0 10px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  padding: 0 10px;
 }
 
 .rightSideBorder {
-    position : absolute;
-    right : 20px;
-    top : -0.5rem;
-    font-size : 2rem;
-    font-weight : bold;
+  position: absolute;
+  right: 20px;
+  top: -0.5rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
+
 .from {
-    float : left;
+  float: left;
 }
+
 .from::before {
-    content : "De : "
+  content: "De : ";
 }
+
 .time {
-    position : absolute;
-    right : 10px;
+  position: absolute;
+  right: 10px;
 }
+
 .time::before {
-    content : "Le : "
+  content: "Le : ";
 }
 
 .nextToForm {
-    position : absolute;
-    top : 0rem;
-    left : 52%;
-    vertical-align: center;
+  position: absolute;
+  top: 0rem;
+  left: 52%;
+  vertical-align: center;
 }
 
 .FCAnswer {
-    font-size: larger;
-    border-left: 3px solid #48C774;
-    border-radius: 3px;
-    padding-left: 10px;
+  font-size: larger;
+  border-left: 3px solid #48C774;
+  border-radius: 3px;
+  padding-left: 10px;
 }
 
 .FCQuestion {
-    font-size: larger;
-    font-weight: bold;
+  font-size: larger;
+  font-weight: bold;
 }
 
 .FCNote {
-    font-size: large;
-    border-left: 3px solid #555;
-    border-radius: 3px;
-    padding-left: 10px;
+  font-size: large;
+  border-left: 3px solid #555;
+  border-radius: 3px;
+  padding-left: 10px;
 }
 
 .input .number {
-    min-width: 170px !important;
+  min-width: 170px !important;
 }
 
 .footer-title {
-    color: #363636;
-    font-size: 1.25rem;
-    font-weight: 600;
+  color: #363636;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .footer-link-title {
-    color: #363636;
-    font-size: 1.25rem;
-    font-weight: 600;
-    transition: color .7s ease-out;
+  color: #363636;
+  font-size: 1.25rem;
+  font-weight: 600;
+  -webkit-transition: color .7s ease-out;
+  transition: color .7s ease-out;
 }
 
 .footer-link-title:hover {
-    color: #3273dc;
+  color: #3273dc;
 }
 
 .footer-link {
-    color: #363636;
-    font-size: initial;
-    transition: color 0.7s ease-out;
+  color: #363636;
+  font-size: initial;
+  -webkit-transition: color 0.7s ease-out;
+  transition: color 0.7s ease-out;
 }
 
 .footer-link:hover {
-    color: #3273dc;
+  color: #3273dc;
 }
 
 .vtag {
-    vertical-align: middle;
-    margin-top: 10px;
+  vertical-align: middle;
+  margin-top: 10px;
 }
+/*# sourceMappingURL=style.css.map */
