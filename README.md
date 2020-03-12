@@ -9,6 +9,6 @@ We use the following libraries:
   * Font awesome Latest (5.12.0 at the moment)
   * Bulma v0.8.0
 
- > Now that we use php instead of html, you can find our website at [flashcardsjda.ovh](flashcardsjda.ovh)
+ > Now that we use php instead of html, you can find our website at [flashcardsjda.ovh](https://www.flashcardsjda.ovh)
  
 This project is licensed under MIT.
