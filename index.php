@@ -2,10 +2,6 @@
 require_once('head.php');
 require_once("menu.php");
 ?>
-
-<body>
-
-
 <div class="container">
     <div class="card mt-5">
         <div class="card-header">
@@ -50,19 +46,8 @@ require_once("menu.php");
 
     <?php endfor; ?>
     <?php endif;?>
-<style>
-.subject::after {
-    content : "";
-    display : block;
-    width : 100%;
-    height : 1px;
-    background-color : #dfdfdf;
-    margin : 5px 0;
-}
-</style>
 <?php require_once("footer.php");
 require_once('end.php');?>
-<script src="js/json/annonce.js"></script>
 </body>
 
 </html>

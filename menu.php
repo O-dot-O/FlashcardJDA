@@ -62,12 +62,15 @@
                         <a class="navbar-item" href="reviser.php">
                             Réviser
                         </a>
-                        <?php if($_COOKIE['admin'] == 'poulet') :?>
+                        <a class="navbar-item" href="signin.php">
+                            Connexion
+                        </a>
+                        <!--<?php if($_COOKIE['admin'] == 'poulet') :?>
                         <a class="navbar-item" href="panel.php">
                             Gérer
                         </a>
                         <?php endif; ?>
-
+-->
                     </div>
                 </div>
             </div>
